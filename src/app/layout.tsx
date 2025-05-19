@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/header/NavBar";
 
 const open_sans = Open_Sans({
   subsets: ["latin"],
@@ -18,9 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${open_sans.className} antialiased`}>
+    <html lang="pt-BR">
+      <body className={`${open_sans.className} antialiased text-textBase bg-background`}>
         <div className="min-h-screen flex flex-col">
+          <NavBar/>
           <main className="flex-grow">{children}</main>
         </div>
       </body>
