@@ -4,10 +4,17 @@
   cursor: url(../../public/assets/cursor-1.cur), auto;
 }
 
+.gradient-text-yellow {
+  background-image: linear-gradient(to bottom, #fff78b, rgb(204, 144, 33));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @theme {
-  --color-primary: #0d47a1;
+  --color-primary: #283593;
   --color-secundary: #FFD700;
   --color-background: #1a237e;
   --color-textBase: #FFFFFF;
   --color-textEasy: #CCCCCC;
+  --drop-shadow-primary: 2px 2px 2px black;
 }

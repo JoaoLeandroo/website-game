@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const NavBar = () => {
     return ( 
-        <header className="bg-primary sticky top-0 font-semibold shadow">
+        <header className="bg-primary sticky top-0 z-50 font-semibold shadow">
             <ContainerMain>
                 <nav className="w-full h-14 flex justify-between items-center">
                     {/* logo */}
@@ -16,7 +16,6 @@ const NavBar = () => {
                     <div className="flex gap-x-2">
                         <Link href={"#"}>Guides</Link>
                         <Link href={"#"}>Donate</Link>
-                        <Link href={"#"}>Regulamento</Link>
                         <Link href={"/download"}>Download</Link>
 
                     </div>

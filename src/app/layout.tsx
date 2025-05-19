@@ -20,9 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${open_sans.className} antialiased text-textBase bg-background`}>
+      <body
+        className={`${open_sans.className} antialiased text-textBase bg-background`}
+      >
         <div className="min-h-screen flex flex-col">
-          <NavBar/>
+          <NavBar />
           <main className="flex-grow">{children}</main>
         </div>
       </body>
