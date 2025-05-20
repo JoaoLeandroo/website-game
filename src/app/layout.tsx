@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins.className} antialiased bg-background cursor-custom-sword `}
+        className={`${poppins.className} antialiased background-site cursor-custom-sword `}
       >
         <div className="min-h-screen flex flex-col">
           <NavBar />

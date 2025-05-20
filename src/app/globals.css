@@ -6,6 +6,24 @@
   -webkit-text-fill-color: transparent;
 }
 
+.background-site {
+  background-image: linear-gradient(
+    to right top,
+    #00d4fb,
+    #76d9ff,
+    #a9dfff,
+    #cee6ff,
+    #e9efff,
+    #e9efff,
+    #e8eeff,
+    #e8eeff,
+    #cde4ff,
+    #a7ddff,
+    #74d6ff,
+    #00d0f6
+  );
+}
+
 /* inicio animação personagem home */
 .personStart {
   position: absolute;
@@ -93,8 +111,8 @@
 @theme {
   --color-primary: #2979ff;
   --color-secundary: #ffd700;
-  --color-background: #FFFFFF;
-  --color-textBase: #FFFFFF;
+  --color-background: #ffffff;
+  --color-textBase: #ffffff;
   --color-textEasy: #cccccc;
   --color-tittle: #494949;
   --color-subTtittle: #606060;
