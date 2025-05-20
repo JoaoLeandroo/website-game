@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/header/NavBar";
 
-const open_sans = Open_Sans({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${open_sans.className} antialiased bg-background cursor-custom-sword`}
+        className={`${poppins.className} antialiased bg-background cursor-custom-sword `}
       >
         <div className="min-h-screen flex flex-col">
           <NavBar />

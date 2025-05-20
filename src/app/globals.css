@@ -96,6 +96,9 @@
   --color-background: #FFFFFF;
   --color-textBase: #FFFFFF;
   --color-textEasy: #cccccc;
+  --color-tittle: #494949;
+  --color-subTtittle: #606060;
+  --color-colorText: #868383;
   --drop-shadow-primary: 2px 2px 2px black;
   --drop-shadow-secundary: 2px 2px 2px #ffff00;
   --drop-shadow-thirdy: 2px 2px 2px #d50000;
