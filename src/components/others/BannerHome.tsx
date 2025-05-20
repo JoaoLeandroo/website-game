@@ -4,6 +4,7 @@ import ContainerMain from "@/components/others/ContainerMain";
 import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { FaDownload } from "react-icons/fa6";
 
 const font = Bungee({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ const BannerHome = () => {
           width={400}
           height={0}
           alt="personagem"
-          className="h-auto absolute -z-10 drop-shadow-secundary"
+          className="h-auto hidden sm:block absolute -z-10 drop-shadow-secundary"
         />
       </motion.div>
       <motion.div
@@ -43,12 +44,12 @@ const BannerHome = () => {
           width={420}
           height={0}
           alt="personagem"
-          className="h-auto absolute right-0 -z-10 drop-shadow-thirdy"
+          className="h-auto hidden sm:block absolute right-0 -z-10 drop-shadow-thirdy"
         />
       </motion.div>
       <ContainerMain>
         <motion.div
-          initial={{ scale: 0.5 }}
+          initial={{ scale: 0 }}
           animate={{
             scale: 1,
             transition: { duration: 1.5 },
@@ -67,9 +68,9 @@ const BannerHome = () => {
             Aqui, sua diversão é coisa séria!
           </p>
 
-          <Link href={"/download"}>
-            <button className="bg-primary px-7 py-3 rounded-full font-bold border text-white mt-2 uppercase">
-                Download
+          <Link href={"/download"} className="hover:cursor-custom-hand">
+            <button className="flex gap-x-2 btn neon-pulse rounded-full font-bold text-white mt-4 uppercase">
+                Download <FaDownload size={20}/>
             </button>
           </Link>
         </motion.div>

@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-* {
-  cursor: url(../../public/assets/cursor-1.cur), auto;
-}
-
 .gradient-text-yellow {
   background-image: linear-gradient(to bottom, #fff78b, rgb(204, 144, 33));
   -webkit-background-clip: text;
@@ -40,13 +36,69 @@
 }
 /* Fim animação personagem home */
 
+/* Inicio animação button download */
+.btn {
+  position: relative;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  /* background: none; */
+  cursor: url(../../public/assets/cursor-2.cur), pointer;
+  border: none;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  min-width: 200px;
+  z-index: 1;
+}
+.btn:hover {
+  background: #3483dc;
+}
+
+.neon-pulse {
+  background: #2979ff;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  overflow: visible;
+}
+
+.neon-pulse::before,
+.neon-pulse::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #0ff;
+  border-radius: inherit;
+  animation: pulseOut 2s ease-out infinite;
+  opacity: 0;
+}
+
+.neon-pulse::after {
+  animation-delay: 1s;
+}
+
+@keyframes pulseOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Fim animação button download */
+
 @theme {
-  --color-primary: #03a9f4;
-  --color-secundary: #FFD700;
-  --color-background: #fff;
+  --color-primary: #2979ff;
+  --color-secundary: #ffd700;
+  --color-background: #FFFFFF;
   --color-textBase: #FFFFFF;
-  --color-textEasy: #CCCCCC;
+  --color-textEasy: #cccccc;
   --drop-shadow-primary: 2px 2px 2px black;
   --drop-shadow-secundary: 2px 2px 2px #ffff00;
   --drop-shadow-thirdy: 2px 2px 2px #d50000;
+  --cursor-custom-sword: url(../../public/assets/cursor-1.cur), auto;
+  --cursor-custom-hand: url(../../public/assets/cursor-2.cur), pointer;
 }

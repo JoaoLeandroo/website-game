@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${open_sans.className} antialiased bg-background`}
+        className={`${open_sans.className} antialiased bg-background cursor-custom-sword`}
       >
         <div className="min-h-screen flex flex-col">
           <NavBar />
