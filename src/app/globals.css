@@ -10,11 +10,43 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* inicio animação personagem home */
+.personStart {
+  position: absolute;
+  top: -20px;
+  animation: animaPerson 2.5s ease-in-out, anima2Person 3s linear infinite;
+  animation-delay: 0s, 2.5s;
+}
+
+@keyframes animaPerson {
+  0% {
+    top: 350px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+
+@keyframes anima2Person {
+  0% {
+    top: -20px;
+  }
+  50% {
+    top: -40px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+/* Fim animação personagem home */
+
 @theme {
-  --color-primary: #283593;
+  --color-primary: #03a9f4;
   --color-secundary: #FFD700;
-  --color-background: #1a237e;
+  --color-background: #fff;
   --color-textBase: #FFFFFF;
   --color-textEasy: #CCCCCC;
   --drop-shadow-primary: 2px 2px 2px black;
+  --drop-shadow-secundary: 2px 2px 2px #ffff00;
+  --drop-shadow-thirdy: 2px 2px 2px #d50000;
 }
