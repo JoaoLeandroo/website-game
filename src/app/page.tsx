@@ -17,9 +17,8 @@ export default function Home() {
       <div className="h-11 w-full bg-blue-800"></div>
       <ContainerMain>
         <div>
-
           {/* SECTION PLANETAS */}
-          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mt-15 mb-24">
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-40 mt-10">
             <section className="flex flex-col text-center xl:text-left gap-y-1 w-full max-w-[600px]">
               <h2
                 className={`${font.className} font-bold text-3xl gradient-text-yellow drop-shadow-primary`}
@@ -58,30 +57,87 @@ export default function Home() {
             </picture>
           </article>
 
-          {/* classes e personalização */}
+          {/* classes e gruides */}
 
-          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-40">
-
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-24">
             <section className="flex flex-col text-center w-full">
               <h3
                 className={`${font.className} font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
               >
                 Guias e Classes
               </h3>
-
               <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
-                <CardClassesStyle href="/others/iniciantes.png" altImg="teste" title="Guia para iniciantes" button="Veja mais" urlButton="/jobs" />
-                <CardClassesStyle href="/others/teste3.png" altImg="teste" title="Classes Avançadas" button="Veja mais" urlButton="/jobs" />
-                <CardClassesStyle href="/others/economia.png" altImg="teste" title="Economia" button="Veja mais" urlButton="/jobs" />
-                <CardClassesStyle href="/others/estilos.png" altImg="teste" title="Estilos" button="Veja mais" urlButton="/jobs" />
-                <CardClassesStyle href="/others/pvp.png" altImg="teste" title="Sistema de Combate" button="Veja mais" urlButton="/jobs" />
-                <CardClassesStyle href="/others/eventos.png" altImg="teste" title="Eventos" button="Veja mais" urlButton="/jobs" />
+                <CardClassesStyle
+                  href="/others/iniciantes.png"
+                  altImg="teste"
+                  title="Guia para iniciantes"
+                  button="Veja mais"
+                  urlButton="/jobs"
+                />
+                <CardClassesStyle
+                  href="/others/teste3.png"
+                  altImg="teste"
+                  title="Classes Avançadas"
+                  button="Veja mais"
+                  urlButton="/jobs"
+                />
+                <CardClassesStyle
+                  href="/others/economia.png"
+                  altImg="teste"
+                  title="Economia"
+                  button="Veja mais"
+                  urlButton="/jobs"
+                />
+                <CardClassesStyle
+                  href="/others/estilos.png"
+                  altImg="teste"
+                  title="Estilos"
+                  button="Veja mais"
+                  urlButton="/jobs"
+                />
+                <CardClassesStyle
+                  href="/others/arua.png"
+                  altImg="teste"
+                  title="Sistema de Combate"
+                  button="Veja mais"
+                  urlButton="/jobs"
+                />
+                <CardClassesStyle
+                  href="/others/eventos.png"
+                  altImg="teste"
+                  title="Eventos"
+                  button="Veja mais"
+                  urlButton="/jobs"
+                />
               </div>
             </section>
-
           </article>
+
         </div>
       </ContainerMain>
+                {/* Eventos Seasonais */}
+
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-14">
+            <section className="flex flex-col text-center w-full">
+              <h4
+                className={`${font.className} font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
+              >
+                Eventos Seasonais
+              </h4>
+
+              <div className="w-full h-[600px]">
+                <Link href={"/seasonal-events"} className="w-full cursor-custom-hand">
+                <Image
+                  src={"/others/seasonal-events.avif"}
+                  width={2600}
+                  height={600}
+                  alt="banner seasonal eventos"
+                  className="w-full rounded shadow"
+                  />
+                  </Link>
+              </div>
+            </section>
+          </article>
     </div>
   );
 }
