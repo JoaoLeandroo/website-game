@@ -1,4 +1,5 @@
 import BannerHome from "@/components/others/BannerHome";
+import CardClassesStyle from "@/components/others/CardClassesStyle";
 import ContainerMain from "@/components/others/ContainerMain";
 import { Bungee } from "next/font/google";
 import Image from "next/image";
@@ -16,7 +17,9 @@ export default function Home() {
       <div className="h-11 w-full bg-blue-800"></div>
       <ContainerMain>
         <div>
-          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mt-15 mb-40">
+
+          {/* SECTION PLANETAS */}
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mt-15 mb-24">
             <section className="flex flex-col text-center xl:text-left gap-y-1 w-full max-w-[600px]">
               <h2
                 className={`${font.className} font-bold text-3xl gradient-text-yellow drop-shadow-primary`}
@@ -53,6 +56,29 @@ export default function Home() {
                 className="rounded xl:rounded-bl-full w-full md:w-[400px] lg:w-[600px] object-cover"
               />
             </picture>
+          </article>
+
+          {/* classes e personalização */}
+
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-40">
+
+            <section className="flex flex-col text-center w-full">
+              <h3
+                className={`${font.className} font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
+              >
+                Guias e Classes
+              </h3>
+
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
+                <CardClassesStyle href="/others/iniciantes.png" altImg="teste" title="Guia para iniciantes" button="Veja mais" urlButton="/jobs" />
+                <CardClassesStyle href="/others/teste3.png" altImg="teste" title="Classes Avançadas" button="Veja mais" urlButton="/jobs" />
+                <CardClassesStyle href="/others/economia.png" altImg="teste" title="Economia" button="Veja mais" urlButton="/jobs" />
+                <CardClassesStyle href="/others/estilos.png" altImg="teste" title="Estilos" button="Veja mais" urlButton="/jobs" />
+                <CardClassesStyle href="/others/pvp.png" altImg="teste" title="Sistema de Combate" button="Veja mais" urlButton="/jobs" />
+                <CardClassesStyle href="/others/eventos.png" altImg="teste" title="Eventos" button="Veja mais" urlButton="/jobs" />
+              </div>
+            </section>
+
           </article>
         </div>
       </ContainerMain>
