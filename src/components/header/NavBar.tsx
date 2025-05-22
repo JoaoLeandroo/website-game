@@ -3,6 +3,7 @@ import ContainerMain from "../others/ContainerMain";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import FreatureMenuBar from "./FreatureMenuBar";
+import GuidesMenuBar from "./GuidesMenuBar";
 
 const NavBar = () => {
   return (
@@ -24,14 +25,14 @@ const NavBar = () => {
           {/* conteudo */}
           <div className="hidden lg:flex gap-x-4 text-md items-center justify-center">
             <Link href={"#"}>Home</Link>
-            <Link href={"#"}>Guides</Link>
-            <FreatureMenuBar/>
+            <GuidesMenuBar />
+            <FreatureMenuBar />
             <Link href={"#"}>Donate</Link>
             <Link href={"#"}>Comunidade</Link>
-            <Link
-              href={"/download"}
-            >
-              <Button className="bg-[#FFEB3B] hover:bg-[#ffeb3bdb] text-[#1A1A1A] cursor-custom-hand">Download</Button>
+            <Link href={"/download"}>
+              <Button className="bg-[#FFEB3B] hover:bg-[#ffeb3bdb] text-[#1A1A1A] cursor-custom-hand">
+                Download
+              </Button>
             </Link>
           </div>
 
