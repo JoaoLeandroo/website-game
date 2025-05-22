@@ -46,7 +46,7 @@ export default function Home() {
                 Explore Mais!
               </Link>
             </section>
-            <picture className="shadow p-2 rounded xl:rounded-bl-full border border-[#2979ff]">
+            <picture className="shadow p-2 rounded xl:rounded-bl-full select-none border border-[#2979ff]">
               <Image
                 src={"/others/arua.png"}
                 width={600}
