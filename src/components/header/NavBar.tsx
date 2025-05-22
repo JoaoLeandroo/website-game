@@ -2,6 +2,7 @@ import Image from "next/image";
 import ContainerMain from "../others/ContainerMain";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import FreatureMenuBar from "./FreatureMenuBar";
 
 const NavBar = () => {
   return (
@@ -12,19 +13,21 @@ const NavBar = () => {
           <Link href={"/"}>
             <Image
               src={"/assets/RoseOnline_Logo.png"}
-              width={70}
-              height={70}
+              width={90}
+              height={90}
               alt="Logo Rose Online Brasil"
+              title="Rose Online Brasil"
+              className="mt-4 cursor-custom-hand"
             />
           </Link>
 
           {/* conteudo */}
-          <div className="flex gap-x-4 text-md items-center justify-center">
+          <div className="hidden lg:flex gap-x-4 text-md items-center justify-center">
+            <Link href={"#"}>Home</Link>
             <Link href={"#"}>Guides</Link>
-            <Link href={"#"}>Freature</Link>
-            <Link href={"#"}>Item Mall</Link>
-            <Link href={"#"}>Comunidade</Link>
+            <FreatureMenuBar/>
             <Link href={"#"}>Donate</Link>
+            <Link href={"#"}>Comunidade</Link>
             <Link
               href={"/download"}
             >
