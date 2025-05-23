@@ -112,9 +112,10 @@
 /* Fim animação button download */
 
 @theme inline {
-    --color-primary: #2979ff;
+  --color-primary: #2979ff;
   --color-secundary: #ffd700;
   --color-background: #ffffff;
+  --color-desc: #1A1A1A;
   --color-textBase: #ffffff;
   --color-textEasy: #cccccc;
   --color-tittle: #494949;

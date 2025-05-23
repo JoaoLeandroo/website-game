@@ -25,7 +25,7 @@ export default function Home() {
               >
                 Explore Todos <br /> os Mundos de <br /> ROSE Online Brasil!
               </h2>
-              <p className="text-colorText font-[400]">
+              <p className="text-desc font-[400]">
                 Prepare-se para embarcar em uma jornada épica no ROSE Online
                 Brasil, um MMORPG gratuito que está no ar há mais de 15 anos,
                 oferecendo aventuras inesquecíveis em um universo vasto e
@@ -34,7 +34,7 @@ export default function Home() {
               <span className="text-xl font-semibold text-tittle">
                 Descubra 7 Planetas Únicos
               </span>
-              <p className="text-colorText font-[400]">
+              <p className="text-desc font-[400]">
                 Seja um dos poucos a explorar todos os sete mundos
                 interplanetários disponíveis — uma exclusividade que você só
                 encontra aqui!
