@@ -1,12 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Bungee } from "next/font/google";
-
-const font = Bungee({
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 interface CardProps {
   href: string;
   altImg: string;
@@ -24,7 +17,7 @@ const CardClassesStyle = ({
 }: CardProps) => {
   return (
     <div className="w-full flex flex-col items-center gap-y-2 max-w-[420px] h-[280px] overflow-hidden rounded shadow bg-zinc-300 relative">
-      <span className={`${font.className} absolute font-bold top-5 left-2 z-10 text drop-shadow-primary text-white text-xl select-none`}>
+      <span className={`font-bungee absolute font-bold top-5 left-2 z-10 text drop-shadow-primary text-white text-xl select-none`}>
         {title}
       </span>
       <Image

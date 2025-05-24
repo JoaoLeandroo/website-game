@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Bungee } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/header/NavBar";
 import Footer from "@/components/footer/Footer";
@@ -7,6 +7,13 @@ import Footer from "@/components/footer/Footer";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
+
+const bungee = Bungee({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-bungee"
 });
 
 export const metadata: Metadata = {
@@ -22,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins.className} antialiased background-site cursor-custom-sword `}
+        className={`${poppins.className} ${bungee.variable} antialiased background-site cursor-custom-sword `}
       >
         <div className="min-h-screen flex flex-col">
           <NavBar />

@@ -1,14 +1,9 @@
 import BannerHome from "@/components/others/BannerHome";
 import CardClassesStyle from "@/components/others/CardClassesStyle";
 import ContainerMain from "@/components/others/ContainerMain";
-import { Bungee } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
-const font = Bungee({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 export default function Home() {
   return (
@@ -21,7 +16,7 @@ export default function Home() {
           <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-40 mt-10">
             <section className="flex flex-col text-center xl:text-left gap-y-1 w-full max-w-[600px]">
               <h2
-                className={`${font.className} font-bold text-3xl gradient-text-yellow drop-shadow-primary`}
+                className={`font-bungee font-bold text-3xl gradient-text-yellow drop-shadow-primary`}
               >
                 Explore Todos <br /> os Mundos de <br /> ROSE Online Brasil!
               </h2>
@@ -40,7 +35,7 @@ export default function Home() {
                 encontra aqui!
               </p>
               <Link
-                href={"/planets"}
+                href={"guides/questPlanets"}
                 className="w-full xl:w-[180px] px-3 py-2 hover:cursor-custom-hand hover:opacity-75 text-center rounded-md border border-[#0ff] shadow-md font-semibold bg-[#2979ff] text-[#fff] uppercase"
               >
                 Explore Mais!
@@ -62,7 +57,7 @@ export default function Home() {
           <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-24">
             <section className="flex flex-col text-center w-full">
               <h3
-                className={`${font.className} font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
+                className={`font-bungee font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
               >
                 Guias e Classes
               </h3>
@@ -120,7 +115,7 @@ export default function Home() {
           <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-14">
             <section className="flex flex-col text-center w-full">
               <h4
-                className={`${font.className} font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
+                className={`font-bungee font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
               >
                 Eventos Seasonais
               </h4>
