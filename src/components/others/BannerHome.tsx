@@ -68,7 +68,7 @@ const BannerHome = () => {
             Aqui, sua diversão é coisa séria!
           </p>
 
-          <Link href={"/downloads/download"} className="hover:cursor-custom-hand">
+          <Link href={"/Downloads/download"} className="hover:cursor-custom-hand">
             <button className="flex gap-x-2 btn neon-pulse rounded-full text-white mt-4 uppercase">
                 Jogue Gratis! <FaDownload size={20}/>
             </button>

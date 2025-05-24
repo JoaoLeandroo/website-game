@@ -30,7 +30,7 @@ const NavBar = () => {
             <GuidesMenuBar />
             <FreatureMenuBar />
             <CommunityMenuBar/>
-            <Link href={"/downloads/download"}>
+            <Link href={"/Downloads/download"}>
               <Button className="bg-[#FFEB3B] hover:bg-[#ffeb3bdb] text-[#1A1A1A] cursor-custom-hand">
                 Download
               </Button>

@@ -121,25 +121,25 @@ const Footer = () => {
               </span>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/Rules/rules"}
               >
                 Regulamento
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/Rules/security"}
               >
                 Dicas de Segurança
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/Rules/pratices"}
               >
                 Boas Praticas
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/Rules/tips"}
               >
                 Dicas
               </Link>
