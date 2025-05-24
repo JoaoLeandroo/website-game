@@ -41,7 +41,7 @@ const GuidesMenuBar = () => {
               Rankings
             </MenubarItem>
           </Link>
-          <Link href={"/guides/download"}>
+          <Link href={"/downloads/download"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Download
             </MenubarItem>

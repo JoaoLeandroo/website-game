@@ -7,7 +7,7 @@ const QuestPlanets = () => {
   return (
     <ContainerMain>
       <SectionContent>
-        <div className="bg-blue-50 px-4 md:px-10">
+        <div className="px-4 md:px-10">
           <section className="mb-16 flex flex-col items-center justify-center">
             <h1 className="font-bungee text-3xl mt-12 gradient-text-yellow drop-shadow-primary text-center">
               Quests Planetárias
