@@ -180,7 +180,7 @@ export default function CreateAccount() {
               </p>
             </div>
 
-                        <div className="space-y-1">
+            <div className="space-y-1">
               <Label htmlFor="login" className="text-slate-400">
                 Login de jogo
               </Label>
@@ -193,8 +193,17 @@ export default function CreateAccount() {
               />
             </div>
             <div className="flex items-center gap-x-2">
-              <Input type="checkbox" className="w-[15px] cursor-custom-hand"/>
-              <p className="font-bold text-desc text-xs">Li e concordo com os termos.</p>
+              <Input type="checkbox" className="w-[15px] cursor-custom-hand" />
+              <p className="font-bold text-desc text-xs">
+                Li os{" "}
+                <Link
+                  href={"/Account/terms"}
+                  className="text-blue-600 hover:text-blue-500 cursor-custom-hand"
+                >
+                  Termos de uso
+                </Link>{" "}
+                e concordo.
+              </p>
             </div>
             <Button className="w-full cursor-custom-hand text-white font-semibold">
               Cadastre-se
