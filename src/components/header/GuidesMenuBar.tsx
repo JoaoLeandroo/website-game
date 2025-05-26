@@ -26,7 +26,7 @@ const GuidesMenuBar = () => {
               Quests Planetarias
             </MenubarItem>
           </Link>
-          <Link href={"/guides/classes"}>
+          <Link href={"/guides/jobs"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Classes
             </MenubarItem>
