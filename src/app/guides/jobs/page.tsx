@@ -2,13 +2,18 @@ import SectionContent from "@/components/others/SectionContent";
 import AnimationLetters from "@/components/others/AnimationsLetters";
 import AnimationsScroll from "@/components/others/AnimationsScroll";
 import Image from "next/image";
+import { BreadcrumbPages } from "@/components/others/BreadcrumbPages";
 
 const Jobs = () => {
   return (
     <SectionContent>
+    
       <section className="px-4 lg:px-10 flex flex-col">
+        <div className="mt-5">
+            <BreadcrumbPages namePage="Classes"/>
+        </div>
         <AnimationLetters>
-          <h1 className="gradient-text-yellow font-bungee drop-shadow-primary text-3xl mt-12">
+          <h1 className="gradient-text-yellow font-bungee drop-shadow-primary text-3xl mt-8">
             Guia de Classes
           </h1>
           <p className="text-desc mt-2">
