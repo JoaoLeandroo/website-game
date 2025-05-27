@@ -29,7 +29,7 @@ const PageStarting = () => {
             Uma das primeiras coisas que você deve fazer é se familiarizar com a
             interface do jogo{" "}
             <Link
-              href={"/"}
+              href={"/guides/interfaceScreen"}
               className="cursor-custom-hand text-blue-500 hover:text-blue-600"
             >
               Veja aqui

@@ -21,19 +21,19 @@ const GuidesMenuBar = () => {
               Guia para Iniciantes
             </MenubarItem>
           </Link>
-                    <Link href={"/guides/questPlanets"}>
+          <Link href={"/guides/questPlanets"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Quests Planetarias
+            </MenubarItem>
+          </Link>
+          <Link href={"/guides/interfaceScreen"}>
+            <MenubarItem className="hover:cursor-custom-hand">
+              Interface
             </MenubarItem>
           </Link>
           <Link href={"/guides/jobs"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Classes
-            </MenubarItem>
-          </Link>
-          <Link href={"/guides/builds"}>
-            <MenubarItem className="hover:cursor-custom-hand">
-              Builds
             </MenubarItem>
           </Link>
           <Link href={"/guides/ranking"}>
