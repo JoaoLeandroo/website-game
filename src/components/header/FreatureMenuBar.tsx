@@ -39,7 +39,7 @@ const FreatureMenuBar = () => {
               Refines
             </MenubarItem>
           </Link>
-          <Link href={"/freatures/switch"}>
+          <Link href={"/freatures/quick-switch"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Quick Switch
             </MenubarItem>

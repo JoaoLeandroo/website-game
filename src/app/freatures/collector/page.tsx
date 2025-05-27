@@ -14,16 +14,14 @@ const PageCollector = () => {
           <h1 className="gradient-text-yellow font-bungee text-3xl drop-shadow-primary mt-8 mb-5">
             Collector
           </h1>
-          <span className="font-bold text-xl text-tittle">
-            Acessando a habilidade
-          </span>
+          <span className="font-bold text-tittle">Acessando a habilidade</span>
           <p className="text-desc mb-5">
             Pressione <span className="font-bold">ALT + E</span> para abrir a
             interface de consumo. Em seguida, acesse a aba de habilidades na
             subcategoria de skills e compre a habilidade de Colecionador.
           </p>
 
-          <span className="font-bold text-xl text-tittle">
+          <span className="font-bold text-tittle">
             Invocando o animal de estimação
           </span>
           <p className="text-desc">
@@ -43,13 +41,11 @@ const PageCollector = () => {
         </picture>
 
         <picture className="flex flex-col mt-12 mb-20">
-          <span className="font-bold text-xl text-tittle">
-            Colecionando itens
-          </span>
-                  <p className="text-desc mt-1 mb-2">
-          Com o pet invocado, basta ir para a área de combate. Ele coletará
-          automaticamente os itens que caírem dos monstros.
-        </p>
+          <span className="font-bold text-tittle">Colecionando itens</span>
+          <p className="text-desc mb-2">
+            Com o pet invocado, basta ir para a área de combate. Ele coletará
+            automaticamente os itens que caírem dos monstros.
+          </p>
           <Image
             src={"/freatures/collector-1.avif"}
             width={1280}
@@ -58,7 +54,6 @@ const PageCollector = () => {
             className="rounded shadow"
           />
         </picture>
-
       </section>
     </SectionContent>
   );

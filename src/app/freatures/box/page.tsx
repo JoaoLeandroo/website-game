@@ -14,10 +14,10 @@ const PageBox = () => {
           <h1 className="gradient-text-yellow font-bungee text-3xl drop-shadow-primary mt-8 mb-5">
             Sistema de Box
           </h1>
-          <span className="font-bold text-xl text-tittle">
+          <span className="font-bold text-tittle">
             Visualização do conteúdo da caixa
           </span>
-          <p className="text-desc mb-5">
+          <p className="text-desc">
             Para ver o que há dentro de uma caixa, pressione a tecla{" "}
             <span className="font-bold">ALT + Clique do mouse</span> sobre a
             caixa.
@@ -35,10 +35,10 @@ const PageBox = () => {
         </div>
 
         <picture className="flex flex-col mt-5 mb-20">
-          <span className="font-bold text-xl text-tittle">
+          <span className="font-bold text-tittle">
             Exibição de conteúdo
           </span>
-          <p className=" text-desc mb-3">
+          <p className=" text-desc">
             Em seguida, uma nova aba será aberta, mostrando todos os itens
             contidos na caixa.
           </p>

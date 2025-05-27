@@ -25,7 +25,7 @@ const PageRefines = () => {
             as desvantagens.
           </p>
 
-          <span className="font-bold text-xl text-tittle">
+          <span className="font-bold text-tittle">
             Preparando-se para o refinamento
           </span>
           <p className="text-desc">
@@ -42,11 +42,11 @@ const PageRefines = () => {
             width={1280}
             height={300}
             alt="personagem refinando"
-            className="rounded shadow mt-6"
+            className="rounded shadow"
           />
         </picture>
 
-        <span className="font-bold text-xl text-tittle mt-8">
+        <span className="font-bold text-tittle mt-8">
           Materiais Químicos
         </span>
         <p className="text-desc">
@@ -57,7 +57,7 @@ const PageRefines = () => {
 
         <AnimationsScroll>
           <div className="flex flex-col mb-20">
-            <span className="font-bold text-xl text-tittle mt-12">
+            <span className="font-bold text-tittle mt-12">
               Tabela de Refinamento
             </span>
             <TableRefines />

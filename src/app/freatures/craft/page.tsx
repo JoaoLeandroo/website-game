@@ -23,7 +23,7 @@ const PageCraft = () => {
             aqueles encontrados como itens derrubados.
           </p>
 
-          <span className="font-bold text-xl text-tittle">
+          <span className="font-bold text-tittle">
             Especialização em Artisan
           </span>
           <p className="text-desc">
@@ -34,7 +34,7 @@ const PageCraft = () => {
           </p>
         </div>
 
-        <span className="font-bold text-xl text-tittle mt-3">
+        <span className="font-bold text-tittle mt-3">
           Como criar itens
         </span>
         <picture>
@@ -70,7 +70,7 @@ const PageCraft = () => {
         </ol>
 
         <picture className="flex flex-col gap-y-2 mt-8">
-          <span className="font-bold text-xl text-tittle mt-3">
+          <span className="font-bold text-tittle mt-3">
             Craft Repetitivo
           </span>
           <Image

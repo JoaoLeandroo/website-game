@@ -14,10 +14,10 @@ const PageQuickSwitch = () => {
           <h1 className="gradient-text-yellow font-bungee text-3xl drop-shadow-primary mt-8 mb-5">
             Quick Switch
           </h1>
-          <span className="font-bold text-xl text-tittle">
+          <span className="font-bold text-tittle">
             Como facilitar a troca de itens no jogo usando uma habilidade
           </span>
-          <p className="text-desc mb-2">
+          <p className="text-desc">
             Pressione a tecla de atalho{" "}
             <span className="font-bold">Alt + I</span> para ativar a capacidade
             de troca, encontre o icone de troca rapida.
@@ -28,15 +28,15 @@ const PageQuickSwitch = () => {
               src={"/freatures/switch-2.avif"}
               width={1280}
               height={300}
-              alt="Criação de clan"
-              className="rounded shadow mt-1 mb-2"
+              alt="quick switch"
+              className="rounded shadow mb-5"
             />
           </picture>
 
-          <span className="font-bold text-xl text-tittle">
+          <span className="font-bold text-tittle">
             Adicionando itens à habilidade
           </span>
-          <p className="text-desc mb-2">
+          <p className="text-desc">
             Após ativar a habilidade, arraste os itens desejados do seu
             inventário para ela. Basta clicar nos itens e arrastá-los para o
             espaço da habilidade.
@@ -47,22 +47,20 @@ const PageQuickSwitch = () => {
               src={"/freatures/switch.avif"}
               width={1280}
               height={300}
-              alt="Criação de clan"
-              className="rounded shadow mt-1 mb-2"
+              alt="quick switch"
+              className="rounded shadow mb-2"
             />
           </picture>
 
           <div>
-            <span className="font-bold text-xl text-tittle">
+            <span className="font-bold text-tittle">
               Criando um atalho rápido
             </span>
-            <p className="text-desc mb-2">
-              Com a linha de swap criada, clique e segure sobre ela e arraste-a
+            <p className="text-desc mb-5">
+              Com a linha de switch criada, clique e segure sobre ela e arraste-a
               para uma tecla de atalho na barra de atalhos
             </p>
-            <span className="font-bold text-xl text-tittle">
-              Realização da Troca
-            </span>
+            <span className="font-bold text-tittle">Realização da Troca</span>
             <p className="text-desc mb-20">
               Agora, sempre que você quiser trocar itens rapidamente, basta
               pressionar a tecla da barra de atalho onde você salvou a
