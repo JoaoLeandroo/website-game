@@ -23,11 +23,13 @@ const QuestPlanets = () => {
               <div className="w-full lg:w-[50%] flex flex-col gap-y-3">
                 <h4 className="text-tittle font-bold text-2xl">Quest Luna</h4>
                 <p className="text-desc">
-                  Ao atingir o nível 40, fale com o NPC <b className="font-[600]">Alphonso</b>, responsável
-                  por realizar transportes para outros planetas em Junon
-                  Polis. Ao chegar à Magic City of the Eucar, capital do planeta
-                  Luna, você deverá localizar o NPC <b className="font-[600]">Eliot</b> e conversar com ele
-                  para aprender o idioma local.
+                  Ao atingir o nível 40, fale com o NPC{" "}
+                  <b className="font-[600]">Alphonso</b>, responsável por
+                  realizar transportes para outros planetas em Junon Polis. Ao
+                  chegar à Magic City of the Eucar, capital do planeta Luna,
+                  você deverá localizar o NPC{" "}
+                  <b className="font-[600]">Eliot</b> e conversar com ele para
+                  aprender o idioma local.
                 </p>
               </div>
               <Image
@@ -54,10 +56,11 @@ const QuestPlanets = () => {
                 <p className="text-desc">
                   Fale com o Ruven em Junon Polis, ele irá falar sobre uma nave
                   misteriosa que caiu em Adventures Plains e você deverá
-                  investigar. Chegando em Adventures, procure pelo <b className="font-[600]">Homem
-                  Misterioso (Osiris)</b>. Ele dirá que está com fome e mal consegue
-                  falar. E pedirá um pouco de Peixe.Você deve ir até o centro da
-                  vila de Adventures Plains e procurar pela <b className="font-[600]">Reene</b>.
+                  investigar. Chegando em Adventures, procure pelo{" "}
+                  <b className="font-[600]">Homem Misterioso (Osiris)</b>. Ele
+                  dirá que está com fome e mal consegue falar. E pedirá um pouco
+                  de Peixe.Você deve ir até o centro da vila de Adventures
+                  Plains e procurar pela <b className="font-[600]">Reene</b>.
                 </p>
               </div>
             </picture>
@@ -89,28 +92,68 @@ const QuestPlanets = () => {
                 <li>
                   <p>
                     Volta no NPC Osiris e entregue o Prato, ele te entregará um
-                    emblema misterioso e pedirá que fale com <b className="font-[600]">Mairath</b>, que fica
-                    bem Próximo a Reene ali no <b className="font-[600]">centro da Vila de Adventures Plains</b>.
+                    emblema misterioso e pedirá que fale com{" "}
+                    <b className="font-[600]">Mairath</b>, que fica bem Próximo
+                    a Reene ali no{" "}
+                    <b className="font-[600]">
+                      centro da Vila de Adventures Plains
+                    </b>
+                    .
                   </p>
                 </li>
                 <li>
                   <p>
-                    Mairath pedirá que você vá falar com <b className="font-[600]">Quintis em Elveerloon
-                    Desert</b>. Depois de falar com Quintis, deverá ir em Forest of
-                    Wisdom, passando por Anima Lake e procurar pela grande
-                    Árvore Frandal.{" "}
+                    Mairath pedirá que você vá falar com{" "}
+                    <b className="font-[600]">Quintis em Elveerloon Desert</b>.
+                    Depois de falar com Quintis, deverá ir em Forest of Wisdom,
+                    passando por Anima Lake e procurar pela grande Árvore Wisdom
+                    Tree em Forest of Wisdom.{" "}
                   </p>
                 </li>
                 <li>
                   <p>
-                    Em seguida volte a Adventures para falar com Osiris. Ele
-                    terá que subir uma pirâmide para recuperar a honra de sua
-                    família, mas como ele é preguiçoso vai falar que não tem
-                    condições de ir e vai pedir pra você ir. Daí é só ir pra
-                    Elveerlon Desert, subir a pirâmide, falar com a estátua,
-                    depois voltar no Salamander Flame e passar a espada dentro
-                    do coração. Ele vai invocar o Firelord. Você mata o
-                    Firelord, volta na estátua e termina essa etapa.
+                    Agora retorne ao Osiris em Adventures Plains para contar o
+                    que voce descobriu.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Agora, ele pediu para você encontrar a Ancient Statue na
+                    Treasure Chamber. Dentro da pirâmide, no deserto de El
+                    Verlon, será necessário subir por uma rampa invisível ao
+                    redor do pilar. Basta clicar no chão da rampa, mesmo que
+                    nada apareça, para subir com os cliques do mouse. Tenha
+                    cuidado para não cair.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Ao entrar na pirâmide, procure pela Ancient Statue na
+                    Treasure Chamber. Após falar com ela, você será instruído a
+                    conversar com a Salamander, que também está dentro da
+                    pirâmide.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Após conversar com a Salamander, ela invocará o monstro
+                    Firelord. Derrote-o e retorne à Ancient Statue na Treasure
+                    Chamber.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Agora, você precisa ir até Kenji Beach e procurar pelo
+                    tablet deixado pelos anciões.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    O diálogo dos tablests aparece automaticamente em frente a
+                    esses dois barris na praia de kenji beach. Assim que
+                    concluir, basta retornar ao Osiris em Adventures Plains.
+                    Após falar com Osiris, ele pedirá que você entregue os
+                    Blueprints ao Ruven em Junon Polis.
                   </p>
                 </li>
                 <li>
