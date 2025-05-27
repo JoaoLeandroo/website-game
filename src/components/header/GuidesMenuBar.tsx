@@ -16,7 +16,7 @@ const GuidesMenuBar = () => {
           Guias <MdKeyboardArrowDown size={20} />
         </MenubarTrigger>
         <MenubarContent className="bg-blue-800 border-none text-white">
-          <Link href={"/guides/"}>
+          <Link href={"/guides/starting"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Guia para Iniciantes
             </MenubarItem>
