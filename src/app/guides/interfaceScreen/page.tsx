@@ -110,9 +110,13 @@ const PageStarting = () => {
             </div>
             <div className="mt-2 flex flex-col">
               <span className="font-bold text-tittle">Janela visualizar</span>
-              <p className="text-desc">Em cima os equipamentos em uso</p>
+
               <p className="text-desc">
-                Abaixo as abas Equipamentos, Itens Consumíveis e Materiais
+                Clicando com o botão DIREITO do mouse junto com a tecla CTRL
+                sobre um ícone, abre a janela Visualizar, e você poderá como
+                ficará o seu char utilizando este item. Esta janela funciona em
+                qualquer local, ou seja, em itens em lojas pessoais, no seu
+                inventário, nos itens de shopping e nos itens de NPCs.
               </p>
             </div>
             <div className="flex flex-col">

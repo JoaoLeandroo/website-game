@@ -11,14 +11,21 @@ import {
   CreditCard,
   Pencil,
   User,
+  Swords,
+  MonitorCog,
+  PersonStanding,
+  BookOpenText,
+  Lightbulb,
+  ThumbsUp,
 } from "lucide-react";
+import { FaDiscord, FaYoutube, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="w-full bg-blue-800">
       <ContainerMain>
-        <div className="flex flex-wrap justify-between py-10">
-          <div className="flex flex-col h-ful">
+        <div className="flex flex-wrap flex-col px-3 md:px-0 md:flex-row gap-y-5 justify-between py-8">
+          <div className="flex flex-col w-full md:max-w-[190px] h-ful">
             <Image
               src={"/assets/RoseOnline_Logo.png"}
               width={60}
@@ -31,11 +38,11 @@ const Footer = () => {
               os direitos reservados.
             </p>
           </div>
-          <section className="flex gap-x-16 text-white">
-            <div className="flex flex-col gap-y-2">
-              <span className="flex gap-x-1 items-center text-lg mb-2">
+          <section className="flex gap-x-8 flex-col md:flex-row text-white">
+            <div className="flex flex-col gap-y-1">
+              <p className="flex gap-x-1 text-white font-bold items-center mb-1">
                 <Paperclip size={15} /> Acesso direto
-              </span>
+              </p>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
                 href={"/"}
@@ -73,83 +80,92 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="flex flex-col gap-y-2">
-              <span className="flex gap-x-1 items-center text-lg mb-2">
+            <div className="flex flex-col gap-y-1">
+              <p className="flex gap-x-1 text-white font-bold items-center mb-1">
                 <Computer size={15} /> Sobre o Jogo
-              </span>
+              </p>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/guides/starting"}
               >
-                Primeiros Passos
+                <Swords size={15} /> Primeiros Passos
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/guides/interfaceScreen"}
               >
-                Controles
+                <MonitorCog size={15} /> Controles
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
                 href={"/guides/jobs"}
               >
-                Classes
-              </Link>
-              <Link
-                className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
-              >
-                Como jogar
-              </Link>
-              <Link
-                className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
-              >
-                Char Status
-              </Link>
-              <Link
-                className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
-              >
-                Skills
+                <PersonStanding size={18} /> Classes
               </Link>
             </div>
 
-            <div className="flex flex-col gap-y-2">
-              <span className="flex gap-x-1 items-center text-lg mb-2">
+            <div className="flex flex-col gap-y-1">
+              <p className="flex gap-x-1 text-white font-bold items-center mb-1">
                 <NotebookText size={15} /> Regulamento e Regras
-              </span>
+              </p>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
                 href={"/Rules/rules"}
               >
-                Regulamento
+                <BookOpenText size={15} /> Regulamento
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
                 href={"/Rules/security"}
               >
-                Dicas de Segurança
+                <Lightbulb size={15} /> Dicas de Segurança
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
                 href={"/Rules/pratices"}
               >
-                Boas Praticas
-              </Link>
-              <Link
-                className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/Rules/tips"}
-              >
-                Dicas
+                <ThumbsUp size={15} /> Boas Praticas
               </Link>
             </div>
           </section>
 
-          <div>
-            <p>
+          <div className="text-white font-bold flex flex-col items-baseline">
+            <p className="flex gap-x-1 items-center justify-center mb-2">
               <Users size={15} /> Redes sociais
             </p>
+            <div className="flex gap-x-2 items-center">
+              <Link
+                target="_blank"
+                href={
+                  "https://www.facebook.com/people/RoseOn-Brasil/100089315821480/"
+                }
+              >
+                <FaFacebook
+                  size={24}
+                  className="cursor-custom-hand hover:opacity-85 hover:scale-105"
+                />
+                <span className="sr-only">Link para acessar facebook</span>
+              </Link>
+              <Link
+                target="_blank"
+                href={
+                  "https://www.youtube.com/channel/UCPOC50J6h-UAOn9qgvKjB-w"
+                }
+              >
+                <FaYoutube
+                  size={30}
+                  className="cursor-custom-hand hover:opacity-85 hover:scale-105"
+                />
+                <span className="sr-only">Link para acessar youtube</span>
+              </Link>
+              <Link target="_blank" href={"https://discord.com/invite/4kAksB4"}>
+                <FaDiscord
+                  size={30}
+                  className="cursor-custom-hand hover:opacity-85 hover:scale-105"
+                />
+                <span className="sr-only">Link para acessar discord</span>
+              </Link>
+            </div>
           </div>
         </div>
       </ContainerMain>
