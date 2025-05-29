@@ -15,7 +15,7 @@ const ControlPainel = () => {
               <h1 className="font-bungee text-3xl gradient-text-yellow drop-shadow-primary">
                 Painel de controle
               </h1>
-              <p className="text-desc">
+              <p className="text-desc mb-2">
                 para ajudar você a aproveitar ao máximo o RoseOnlineBrasil.
               </p>
             </div>

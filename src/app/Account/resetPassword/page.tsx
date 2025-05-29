@@ -1,3 +1,4 @@
+import { BreadcrumbPages } from "@/components/others/BreadcrumbPages";
 import SectionContent from "@/components/others/SectionContent";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,6 +15,11 @@ import { Gamepad2 } from "lucide-react";
 export default function ResetPassword() {
   return (
     <SectionContent>
+      <div className="flex flex-col">
+        <div className="mt-5">
+          <BreadcrumbPages namePage="Recuperar senha" />
+        </div>
+      </div>
       <div className="flex items-center justify-center p-4">
         <Card className="w-full rounded-[2px] max-w-2xl relative mt-8 mb-20 z-10">
           <CardHeader className="text-center">

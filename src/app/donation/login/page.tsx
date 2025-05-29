@@ -1,6 +1,5 @@
 "use client";
 
-import { BreadcrumbPages } from "@/components/others/BreadcrumbPages";
 import SectionContent from "@/components/others/SectionContent";
 import { Button } from "@/components/ui/button";
 import {
@@ -17,16 +16,18 @@ import { Separator } from "@/components/ui/separator";
 import { Gamepad2, Eye, EyeOff } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { BreadcrumbPages } from "@/components/others/BreadcrumbPages";
 
-export default function Login() {
+export default function LoginDonate() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <SectionContent>
       <section className="flex flex-col">
         <div className="mt-5">
-          <BreadcrumbPages namePage="Login de jogo" />
+          <BreadcrumbPages namePage="Login de doação" />
         </div>
+
         <div className="flex items-center justify-center p-4">
           <Card className="w-full rounded-[2px] max-w-md relative mt-8 mb-20 z-10">
             <CardHeader className="text-center">
@@ -40,26 +41,26 @@ export default function Login() {
                   Rose online Brasil
                 </CardTitle>
                 <CardDescription className="text-slate-400">
-                  Entre na sua conta e continue jogando
+                  Acesse o sistema de Doação
                 </CardDescription>
               </div>
             </CardHeader>
 
             <CardContent className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-slate-400">
-                  Digite seu email
+              <div>
+                <Label htmlFor="username" className="text-slate-400">
+                  Digite seu username
                 </Label>
                 <Input
-                  id="email"
+                  id="username"
                   type="text"
-                  placeholder="Digite seu e-Mail"
+                  placeholder="Digite o Login do jogo"
                   className="border-slate-400 text-slate-700 placeholder:text-slate-400"
                   required
                 />
               </div>
 
-              <div className="space-y-2">
+              <div>
                 <Label htmlFor="password" className="text-slate-400">
                   Informe sua senha
                 </Label>
@@ -75,7 +76,7 @@ export default function Login() {
                     type="button"
                     variant="ghost"
                     size="sm"
-                    className="absolute right-0 top-0 h-full px-3 text-slate-400 hover:text-white"
+                    className="absolute right-0 top-0 h-full px-3 bg-transparent hover:bg-transparent border-l text-slate-400 hover:text-black cursor-custom-hand"
                     onClick={() => setShowPassword(!showPassword)}
                   >
                     {showPassword ? (
@@ -108,12 +109,12 @@ export default function Login() {
                 </Link>
               </p>
               <p className="text-sm text-slate-400">
-                Não tem uma conta?{" "}
+                Leia os termos!{" "}
                 <Link
-                  href="/account/createAccount"
+                  href="/account/terms"
                   className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
                 >
-                  Cadastre-se
+                  Terms
                 </Link>
               </p>
             </CardFooter>
