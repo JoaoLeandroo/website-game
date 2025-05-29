@@ -63,46 +63,46 @@ export default function Home() {
               </h3>
               <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
                 <CardClassesStyle
-                  href="/others/iniciantes.png"
-                  altImg="teste"
+                  href="/others/iniciando.avif"
+                  altImg="Guia para iniciantes"
                   title="Guia para iniciantes"
                   button="Veja mais"
-                  urlButton="/jobs"
+                  urlButton="/guides/starting"
                 />
                 <CardClassesStyle
-                  href="/others/teste3.png"
-                  altImg="teste"
+                  href="/others/classes.avif"
+                  altImg="Guia de classes"
                   title="Classes Avançadas"
                   button="Veja mais"
-                  urlButton="/jobs"
+                  urlButton="/guides/jobs"
                 />
                 <CardClassesStyle
-                  href="/others/economia.png"
-                  altImg="teste"
-                  title="Economia"
+                  href="/others/economia.avif"
+                  altImg="Lojinha off"
+                  title="Off Vending"
                   button="Veja mais"
-                  urlButton="/jobs"
+                  urlButton="/freatures/offVending"
                 />
                 <CardClassesStyle
-                  href="/others/estilos.png"
-                  altImg="teste"
-                  title="Estilos"
+                  href="/others/estilo.avif"
+                  altImg="Interface"
+                  title="Interface"
                   button="Veja mais"
-                  urlButton="/jobs"
+                  urlButton="/guides/interfaceScreen"
                 />
                 <CardClassesStyle
-                  href="/others/arua.png"
-                  altImg="teste"
+                  href="/others/pvp_.avif"
+                  altImg="Sistema PvP"
                   title="Sistema de Combate"
                   button="Veja mais"
                   urlButton="/jobs"
                 />
                 <CardClassesStyle
-                  href="/others/eventos.png"
-                  altImg="teste"
-                  title="Eventos"
+                  href="/others/game-arena.avif"
+                  altImg="Sistema Game arena"
+                  title="Game Arena"
                   button="Veja mais"
-                  urlButton="/jobs"
+                  urlButton="/freatures/game-arena"
                 />
               </div>
             </section>

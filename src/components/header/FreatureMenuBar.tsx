@@ -32,7 +32,9 @@ const FreatureMenuBar = () => {
             </MenubarItem>
           </Link>
           <Link href={"/freatures/clan"}>
-            <MenubarItem className="hover:cursor-custom-hand">Sistema de Clans</MenubarItem>
+            <MenubarItem className="hover:cursor-custom-hand">
+              Sistema de Clans
+            </MenubarItem>
           </Link>
           <Link href={"/freatures/refines"}>
             <MenubarItem className="hover:cursor-custom-hand">
@@ -42,6 +44,11 @@ const FreatureMenuBar = () => {
           <Link href={"/freatures/quick-switch"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Quick Switch
+            </MenubarItem>
+          </Link>
+          <Link href={"/freatures/game-arena"}>
+            <MenubarItem className="hover:cursor-custom-hand">
+              Game Arena
             </MenubarItem>
           </Link>
           <Link href={"/freatures/offVending"}>

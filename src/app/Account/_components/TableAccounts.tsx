@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ShieldCheck } from "lucide-react";
+import { SelectState } from "./SelectState";
 
 export function TableAccount() {
   return (
@@ -49,27 +50,39 @@ export function TableAccount() {
         </TabsContent>
 
         <TabsContent value="password">
-          <Card>
+          <Card className="mb-20">
             <CardHeader>
-              <CardTitle>Alterar senha de - loolraiderteste@teste.com</CardTitle>
-              <div>
-                <p className="text-blue-700 text-xs select-none">
-                  
-                </p>
-              </div>
+              <CardTitle>Mude sua senha aqui</CardTitle>
+              <p className="text-blue-700 text-xs select-none">
+                leandro@teste.com
+              </p>
             </CardHeader>
-            <CardContent className="space-y-2">
-              <div className="space-y-1">
-                <Label htmlFor="current">Nova senha</Label>
-                <Input id="current" type="password" />
+            <CardContent className="flex flex-col gap-y-4">
+              <div>
+                <Label htmlFor="current" className="text-xs">
+                  Nova senha
+                </Label>
+                <Input
+                  id="current"
+                  type="password"
+                  placeholder="Digite sua nova senha"
+                  className="h-11"
+                />
               </div>
-              <div className="space-y-1">
-                <Label htmlFor="new">Confirme sua nova senha</Label>
-                <Input id="new" type="password" />
+              <div>
+                <Label htmlFor="new" className="text-xs">
+                  Confirme sua nova senha
+                </Label>
+                <Input
+                  id="new"
+                  type="password"
+                  placeholder="Confirme sua senha"
+                  className="h-11"
+                />
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="cursor-custom-hand">Alterar senha</Button>
+              <Button className="cursor-custom-hand h-11">Alterar senha</Button>
             </CardFooter>
           </Card>
         </TabsContent>
@@ -91,8 +104,11 @@ export function TableAccount() {
                 </div>
               </CardHeader>
               <div className="flex justify-between gap-x-3 mt-10">
-                <div className="flex flex-col gap-y-1">
-                  <Label htmlFor="firistName" className="text-slate-400">
+                <div className="flex flex-col">
+                  <Label
+                    htmlFor="firistName"
+                    className="text-slate-400 text-xs"
+                  >
                     Primeiro Nome
                   </Label>
                   <Input
@@ -104,8 +120,11 @@ export function TableAccount() {
                   />
                 </div>
 
-                <div className="flex flex-col gap-y-1">
-                  <Label htmlFor="middleName" className="text-slate-400">
+                <div className="flex flex-col">
+                  <Label
+                    htmlFor="middleName"
+                    className="text-slate-400 text-xs"
+                  >
                     Nome do Meio
                   </Label>
                   <Input
@@ -117,8 +136,8 @@ export function TableAccount() {
                   />
                 </div>
 
-                <div className="flex flex-col gap-y-1">
-                  <Label htmlFor="sobrenome" className="text-slate-400">
+                <div className="flex flex-col">
+                  <Label htmlFor="sobrenome" className="text-slate-400 text-xs">
                     Sobrenome
                   </Label>
                   <Input
@@ -139,20 +158,32 @@ export function TableAccount() {
                 </p>
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="nameMother" className="text-slate-400">
+              <div>
+                <Label htmlFor="nameMother" className="text-slate-400 text-xs">
                   Nome do Meio da sua Mãe
                 </Label>
                 <Input
                   id="nameMother"
                   type="text"
                   placeholder="Nome do meio da mãe"
-                  className="border-slate-400 w-full md:w-[50%] text-slate-700 placeholder:text-slate-400"
+                  className="border-slate-400 w-full md:w-[30%] text-slate-700 placeholder:text-slate-400"
                   required
                 />
               </div>
 
-              <Button className="w-full mt-2 h-11 cursor-custom-hand text-white bg-green-600 hover:bg-green-700 font-semibold">
+              <div>
+                <div className="w-full bg-yellow-200 p-3 rounded mt-6 mb-2">
+                  <p className="text-xs text-slate-700">
+                    Deixe-nos saber de onde você está jogando.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-y-3">
+                <SelectState estado="Informe seu estado"/>
+                <SelectState estado="Sua cidade"/>
+                </div>
+              </div>
+
+              <Button className="max-w-[300px] mt-5 h-11 cursor-custom-hand text-white bg-green-600 hover:bg-green-700 font-semibold">
                 Fazer alterações
               </Button>
             </CardContent>
