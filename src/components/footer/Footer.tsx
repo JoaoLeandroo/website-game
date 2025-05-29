@@ -110,19 +110,19 @@ const Footer = () => {
               </p>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/Rules/rules"}
+                href={"/rules/rules"}
               >
                 <BookOpenText size={15} /> Regulamento
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/Rules/security"}
+                href={"/rules/security"}
               >
                 <Lightbulb size={15} /> Dicas de Segurança
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/Rules/pratices"}
+                href={"/rules/pratices"}
               >
                 <ThumbsUp size={15} /> Boas Praticas
               </Link>

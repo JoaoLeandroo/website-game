@@ -26,11 +26,11 @@ const NavBar = () => {
           {/* conteudo */}
           <div className="hidden lg:flex gap-x-4 text-md items-center justify-center">
             <Link href={"/"} className="cursor-custom-hand">Home</Link>
-            <Link href={"/donate"} className="cursor-custom-hand">Donate</Link>
+            <Link href={"/donation/login"} className="cursor-custom-hand">Donate</Link>
             <GuidesMenuBar />
             <FreatureMenuBar />
             <CommunityMenuBar/>
-            <Link href={"/Downloads/download"}>
+            <Link href={"/downloads/download"}>
               <Button className="bg-[#FFEB3B] hover:bg-[#ffeb3bdb] text-[#1A1A1A] cursor-custom-hand">
                 Download
               </Button>
@@ -39,10 +39,10 @@ const NavBar = () => {
 
           {/* auth */}
           <div className="flex gap-x-2">
-            <Link href={"/Account/login"}>
+            <Link href={"/account/login"}>
               <Button className="cursor-custom-hand">Login</Button>
             </Link>
-            <Link href={"/Account"}>
+            <Link href={"/account/createAccount"}>
               <Button className="cursor-custom-hand">Register</Button>
             </Link>
           </div>
