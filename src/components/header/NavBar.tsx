@@ -30,7 +30,7 @@ const NavBar = () => {
             <GuidesMenuBar />
             <FreatureMenuBar />
             <CommunityMenuBar/>
-            <Link href={"/downloads/download"}>
+            <Link href={"/Downloads/download"}>
               <Button className="bg-[#FFEB3B] hover:bg-[#ffeb3bdb] text-[#1A1A1A] cursor-custom-hand">
                 Download
               </Button>
@@ -39,10 +39,10 @@ const NavBar = () => {
 
           {/* auth */}
           <div className="flex gap-x-2">
-            <Link href={"/account/login"}>
+            <Link href={"/Account/login"}>
               <Button className="cursor-custom-hand">Login</Button>
             </Link>
-            <Link href={"/account/createAccount"}>
+            <Link href={"/Account/createAccount"}>
               <Button className="cursor-custom-hand">Register</Button>
             </Link>
           </div>

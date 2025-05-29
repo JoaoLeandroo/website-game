@@ -249,7 +249,7 @@ const QuestPlanets = () => {
                 </div>
               </picture>
 
-              <div className="text-left w-full p-2 mt-5">
+              <div className="text-left w-full p-2 mt-5 mb-20">
                 <ol className="list-decimal p-5 flex flex-col gap-y-2 text-desc">
                   <li>
                     <p>

@@ -43,7 +43,7 @@ export default function Home() {
             </section>
             <picture className="shadow p-2 rounded xl:rounded-bl-full select-none border border-[#2979ff]">
               <Image
-                src={"/others/arua.png"}
+                src={"/others/arua.avif"}
                 width={600}
                 height={0}
                 alt="teste"

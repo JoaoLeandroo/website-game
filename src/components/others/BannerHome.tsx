@@ -15,10 +15,10 @@ const BannerHome = () => {
   return (
     <section className="w-full h-[320px] md:h-[420px] relative overflow-hidden">
       <Image
-        src={"/4.jpg"}
+        src={"/background.avif"}
         width={3080}
         height={2320}
-        alt="background teste"
+        alt="background home"
         className="absolute top-0 h-full object-cover select-none bg-blue-800 opacity-85 -z-20"
       />
       <motion.div
