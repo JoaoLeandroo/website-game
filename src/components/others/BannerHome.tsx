@@ -1,24 +1,20 @@
 "use client";
-import { Bungee } from "next/font/google";
 import ContainerMain from "@/components/others/ContainerMain";
 import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
 
-const font = Bungee({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const BannerHome = () => {
   return (
     <section className="w-full h-[320px] md:h-[420px] relative overflow-hidden">
       <Image
-        src={"/background.avif"}
-        width={3080}
-        height={2320}
+        src={"/banner.avif"}
+        width={2560}
+        height={900}
         alt="background home"
+        priority
         className="absolute top-0 h-full object-cover select-none bg-blue-800 opacity-85 -z-20"
       />
       <motion.div
@@ -57,7 +53,7 @@ const BannerHome = () => {
           className="w-full flex items-center justify-center h-[320px] flex-col"
         >
           <h1
-            className={`${font.className} text-5xl text-center drop-shadow-primary gradient-text-yellow select-none`}
+            className={`font-bungee text-5xl text-center drop-shadow-primary gradient-text-yellow select-none`}
           >
             Bem vindo ao <br /> Rose Online Brasil
           </h1>
