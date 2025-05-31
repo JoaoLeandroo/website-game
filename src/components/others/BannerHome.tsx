@@ -10,39 +10,33 @@ const BannerHome = () => {
   return (
     <section className="w-full h-[320px] md:h-[420px] relative overflow-hidden">
       <Image
-        src={"/banner.avif"}
+        src={"/banner_5.avif"}
         width={2560}
         height={900}
         alt="background home"
         priority
-        className="absolute top-0 h-full object-cover select-none bg-blue-800 opacity-85 -z-20"
+        className="absolute top-0 h-full object-cover select-none opacity-90 bg-blue-800 -z-20"
       />
-      <motion.div
-        initial={{ opacity: 0, x: -200 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+      <div
       >
         <Image
           src={"/persons/chara_mage.png"}
           width={400}
           height={0}
           alt="personagem"
-          className="h-auto hidden sm:block absolute -z-10 drop-shadow-secundary"
+          className="h-auto hidden sm:block absolute -z-10 personStart"
         />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: 200 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+      </div>
+      <div
       >
         <Image
-          src={"/persons/chara_striker.png"}
+          src={"/persons/chara_archer.png"}
           width={420}
           height={0}
           alt="personagem"
-          className="h-auto hidden sm:block absolute right-0 -z-10 drop-shadow-thirdy"
+          className="h-auto hidden sm:block absolute right-0 -z-10 personStart"
         />
-      </motion.div>
+      </div>
       <ContainerMain>
         <motion.div
           initial={{ scale: 0 }}

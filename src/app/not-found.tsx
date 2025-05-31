@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { ArrowLeft, Gamepad2 } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { ArrowLeft, Gamepad2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
@@ -14,15 +14,24 @@ export default function NotFound() {
         </div>
 
         <div className="space-y-4 mt-">
-          <p className="text-xl text-gray-400">O nível que você está procurando não foi encontrado</p>
+          <p className="text-xl text-gray-400">
+            O nível que você está procurando não foi encontrado
+          </p>
 
           <div className="rounded-lg p-6 mt-8 space-y-4">
             <p className="text-sm text-gray-400">
-              Parece que você seguiu um link quebrado ou digitou um endereço que não existe.
+              Parece que você seguiu um link quebrado ou digitou um endereço que
+              não existe.
             </p>
 
-            <Button asChild className="bg-primary hover:bg-blue-600 text-white w-full">
-              <Link href="/" className="flex items-center justify-center gap-2 cursor-custom-hand">
+            <Button
+              asChild
+              className="bg-primary hover:bg-blue-600 text-white w-full"
+            >
+              <Link
+                href="/"
+                className="flex items-center justify-center gap-2 cursor-custom-hand"
+              >
                 <ArrowLeft className="h-4 w-4" />
                 Voltar para o início
               </Link>
@@ -32,11 +41,15 @@ export default function NotFound() {
 
         <p className="text-sm text-gray-500 mt-8">
           Quer reportar um problema?{" "}
-          <Link href="/contato" className="text-blue-300 cursor-custom-hand hover:underline">
+          <Link
+            href={"https://discord.com/invite/4kAksB4"}
+            target="_blank"
+            className="text-blue-300 cursor-custom-hand hover:underline"
+          >
             Entre em contato
           </Link>
         </p>
       </div>
     </div>
-  )
+  );
 }

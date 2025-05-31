@@ -52,28 +52,28 @@ const Footer = () => {
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/Downloads/download"}
               >
                 <Download size={15} />
                 Download
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/Donation/login"}
               >
                 <CreditCard size={15} />
                 Doação
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/Account/createAccount"}
               >
                 <User size={15} />
                 Criar Conta
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/"}
+                href={"/Account/login"}
               >
                 <Pencil size={15} />
                 Editar Conta

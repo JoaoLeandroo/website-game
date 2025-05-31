@@ -5,6 +5,8 @@ import { Button } from "../ui/button";
 import FreatureMenuBar from "./FreatureMenuBar";
 import GuidesMenuBar from "./GuidesMenuBar";
 import CommunityMenuBar from "./CommunityMenuBar";
+import ResponsiveMenuNavBar from "./ResponsiveMenuNavBar";
+
 
 const NavBar = () => {
   return (
@@ -38,14 +40,18 @@ const NavBar = () => {
           </div>
 
           {/* auth */}
-          <div className="flex gap-x-2">
-            <Link href={"/Account/login"}>
+          <div className="flex gap-x-2 items-center justify-center">
+            <Link className="hidden lg:block" href={"/Account/login"}>
               <Button className="cursor-custom-hand">Login</Button>
             </Link>
-            <Link href={"/Account/createAccount"}>
+            <Link className="hidden lg:block" href={"/Account/createAccount"}>
               <Button className="cursor-custom-hand">Register</Button>
             </Link>
+          <div className="block lg:hidden">
+            <ResponsiveMenuNavBar/>
           </div>
+          </div>
+
         </nav>
       </ContainerMain>
     </header>

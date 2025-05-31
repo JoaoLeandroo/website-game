@@ -3,13 +3,38 @@ import CardClassesStyle from "@/components/others/CardClassesStyle";
 import ContainerMain from "@/components/others/ContainerMain";
 import Image from "next/image";
 import Link from "next/link";
-
+import { FaDiscord, FaYoutube, FaFacebook } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-[1920px]">
       <BannerHome />
-      <div className="h-11 w-full bg-blue-800"></div>
+      <div className="h-11 w-full bg-blue-500 flex gap-x-2 items-center justify-center">
+        <Link
+          target="_blank"
+          href={"https://discord.com/invite/4kAksB4"}
+          className="cursor-custom-hand hover:opacity-75 transition duration-200"
+        >
+          <FaDiscord size={30} color="white" />
+          <div className="sr-only">Botão Discord</div>
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://www.youtube.com/channel/UCPOC50J6h-UAOn9qgvKjB-w"}
+          className="cursor-custom-hand hover:opacity-75 transition duration-200"
+        >
+          <FaYoutube size={30} color="white" />
+          <div className="sr-only">Botão youtube</div>
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://www.facebook.com/people/RoseOn-Brasil/100089315821480/"}
+          className="cursor-custom-hand hover:opacity-75 transition duration-200"
+        >
+          <FaFacebook size={23} color="white" />
+          <div className="sr-only">Botão Facebook</div>
+        </Link>
+      </div>
       <ContainerMain>
         <div>
           {/* SECTION PLANETAS */}
@@ -95,7 +120,7 @@ export default function Home() {
                   altImg="Sistema PvP"
                   title="Sistema de Combate"
                   button="Veja mais"
-                  urlButton="/jobs"
+                  urlButton="/freatures/pvp"
                 />
                 <CardClassesStyle
                   href="/others/game-arena.avif"
@@ -107,32 +132,34 @@ export default function Home() {
               </div>
             </section>
           </article>
-
         </div>
       </ContainerMain>
-                {/* Eventos Seasonais */}
+      {/* Eventos Seasonais */}
 
-          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-14">
-            <section className="flex flex-col text-center w-full">
-              <h4
-                className={`font-bungee font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
-              >
-                Eventos Seasonais
-              </h4>
+      <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-14">
+        <section className="flex flex-col text-center w-full">
+          <h4
+            className={`font-bungee font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
+          >
+            Eventos Seasonais
+          </h4>
 
-              <div className="w-full h-[600px]">
-                <Link href={"/seasonal-events"} className="w-full cursor-custom-hand">
-                <Image
-                  src={"/others/seasonal-events.avif"}
-                  width={2600}
-                  height={600}
-                  alt="banner seasonal eventos"
-                  className="w-full rounded shadow"
-                  />
-                  </Link>
-              </div>
-            </section>
-          </article>
+          <div className="w-full h-[600px]">
+            <Link
+              href={"/seasonal-events"}
+              className="w-full cursor-custom-hand"
+            >
+              <Image
+                src={"/others/seasonal-events.avif"}
+                width={2600}
+                height={600}
+                alt="banner seasonal eventos"
+                className="w-full rounded shadow"
+              />
+            </Link>
+          </div>
+        </section>
+      </article>
     </div>
   );
 }

@@ -47,14 +47,13 @@ const QuestPlanets = () => {
               </picture>
             </section>
           </AnimationsScroll>
-          <AnimationsScroll>
             <section className="flex flex-col items-center mt-20">
               <picture className="flex flex-wrap gap-y-3 gap-x-4 items-center justify-center lg:justify-between lg:flex-nowrap">
                 <Image
                   src={"/guides/oro_.avif"}
                   width={720}
                   height={0}
-                  alt="planeta hebarn"
+                  alt="planeta oro"
                   className="rounded shadow-md w-[720px]"
                 />
                 <div className="w-full lg:w-[50%] flex flex-col gap-y-3">
@@ -179,9 +178,7 @@ const QuestPlanets = () => {
                 </ol>
               </div>
             </section>
-          </AnimationsScroll>
 
-          <AnimationsScroll>
             <section className="flex flex-col items-center mt-10">
               <picture className="flex flex-wrap-reverse gap-y-3 gap-x-4 items-center justify-center lg:justify-between lg:flex-nowrap">
                 <div className="w-full lg:w-[50%] flex flex-col gap-y-3">
@@ -324,7 +321,6 @@ const QuestPlanets = () => {
                 </ol>
               </div>
             </section>
-          </AnimationsScroll>
         </div>
       </SectionContent>
     </ContainerMain>
