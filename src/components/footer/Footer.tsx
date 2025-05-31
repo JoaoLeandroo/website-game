@@ -66,14 +66,14 @@ const Footer = () => {
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/Account/createAccount"}
+                href={"/auth/createAccount"}
               >
                 <User size={15} />
                 Criar Conta
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/Account/login"}
+                href={"/auth/login"}
               >
                 <Pencil size={15} />
                 Editar Conta

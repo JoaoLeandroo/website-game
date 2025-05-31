@@ -136,7 +136,7 @@ const ResponsiveMenuNavBar = () => {
                         Off Vending
                       </SheetClose>
                     </Link>
-                                        <Link
+                    <Link
                       href="/freatures/pvp"
                       className="w-full cursor-custom-hand font-semibold bg-slate-300 rounded hover:opacity-85"
                     >
@@ -202,7 +202,7 @@ const ResponsiveMenuNavBar = () => {
             </Accordion>
           </div>
           <SheetFooter className=" w-full flex flex-row gap-x-2 justify-end mb-5">
-            <Link href={"/Account/login"}>
+            <Link href={"/auth/login"}>
               <SheetClose>
                 <p className="cursor-custom-hand px-3 py-2 rounded bg-yellow-300 text-desc hover:bg-yellow-200">
                   Login
@@ -210,7 +210,7 @@ const ResponsiveMenuNavBar = () => {
               </SheetClose>
             </Link>
 
-            <Link href={"/Account/createAccount"}>
+            <Link href={"/auth/createAccount"}>
               <SheetClose>
                 <p className="cursor-custom-hand px-3 py-2 rounded bg-yellow-300 text-desc hover:bg-yellow-200">
                   Register

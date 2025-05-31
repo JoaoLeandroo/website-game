@@ -226,7 +226,7 @@ export default function CreateAccount() {
             <p className="text-sm text-slate-400">
               Já possui conta?{" "}
               <Link
-                href="/Account/login"
+                href="/auth/login"
                 className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
               >
                 Faça login

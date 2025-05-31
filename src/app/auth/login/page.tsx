@@ -101,7 +101,7 @@ export default function Login() {
               <p className="text-slate-400 text-sm">
                 Esqueceu sua senha?{" "}
                 <Link
-                  href={"/Account/resetPassword"}
+                  href={"/auth/resetPassword"}
                   className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
                 >
                   Recuperar senha.
@@ -110,7 +110,7 @@ export default function Login() {
               <p className="text-sm text-slate-400">
                 Não tem uma conta?{" "}
                 <Link
-                  href="/Account/createAccount"
+                  href="/auth/createAccount"
                   className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
                 >
                   Cadastre-se

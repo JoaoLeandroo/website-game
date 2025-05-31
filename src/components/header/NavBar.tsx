@@ -41,10 +41,10 @@ const NavBar = () => {
 
           {/* auth */}
           <div className="flex gap-x-2 items-center justify-center">
-            <Link className="hidden lg:block" href={"/Account/login"}>
+            <Link className="hidden lg:block" href={"/auth/login"}>
               <Button className="cursor-custom-hand">Login</Button>
             </Link>
-            <Link className="hidden lg:block" href={"/Account/createAccount"}>
+            <Link className="hidden lg:block" href={"/auth/createAccount"}>
               <Button className="cursor-custom-hand">Register</Button>
             </Link>
           <div className="block lg:hidden">
