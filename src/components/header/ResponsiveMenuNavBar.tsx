@@ -43,7 +43,7 @@ const ResponsiveMenuNavBar = () => {
                 Home
               </SheetClose>
             </Link>
-            <Link href="/Donation/login">
+            <Link href="/donate/login">
               <SheetClose className="cursor-custom-hand w-full text-left font-semibold p-2 transition duration-200 rounded bg-slate-300">
                 Donate
               </SheetClose>

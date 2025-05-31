@@ -28,7 +28,7 @@ const NavBar = () => {
           {/* conteudo */}
           <div className="hidden lg:flex gap-x-4 text-md items-center justify-center">
             <Link href={"/"} className="cursor-custom-hand">Home</Link>
-            <Link href={"/donation/login"} className="cursor-custom-hand">Donate</Link>
+            <Link href={"/donate/login"} className="cursor-custom-hand">Donate</Link>
             <GuidesMenuBar />
             <FreatureMenuBar />
             <CommunityMenuBar/>
