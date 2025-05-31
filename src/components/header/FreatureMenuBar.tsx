@@ -56,6 +56,11 @@ const FreatureMenuBar = () => {
               Off Vending
             </MenubarItem>
           </Link>
+                    <Link href={"/freatures/pvp"}>
+            <MenubarItem className="hover:cursor-custom-hand">
+              Sistema de combate
+            </MenubarItem>
+          </Link>
         </MenubarContent>
       </MenubarMenu>
     </Menubar>

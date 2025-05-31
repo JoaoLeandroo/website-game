@@ -136,6 +136,14 @@ const ResponsiveMenuNavBar = () => {
                         Off Vending
                       </SheetClose>
                     </Link>
+                                        <Link
+                      href="/freatures/pvp"
+                      className="w-full cursor-custom-hand font-semibold bg-slate-300 rounded hover:opacity-85"
+                    >
+                      <SheetClose className="w-full cursor-custom-hand p-2">
+                        Sistema de combate
+                      </SheetClose>
+                    </Link>
                   </section>
                 </AccordionContent>
               </AccordionItem>
