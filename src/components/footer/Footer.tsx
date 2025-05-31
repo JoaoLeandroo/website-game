@@ -52,7 +52,7 @@ const Footer = () => {
               </Link>
               <Link
                 className="text-xs flex gap-x-1 items-center cursor-custom-hand hover:opacity-75 transition duration-200"
-                href={"/Downloads/download"}
+                href={"/guides/download"}
               >
                 <Download size={15} />
                 Download
