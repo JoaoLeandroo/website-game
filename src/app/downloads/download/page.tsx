@@ -4,14 +4,29 @@ import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { TableDownload } from "@/components/others/TableDownload";
-
+import { BreadcrumbPages } from "@/components/others/BreadcrumbPages";
 
 const PageDownload = () => {
   return (
     <ContainerMain>
+      <div className="mt-5">
+        <BreadcrumbPages namePage="Download" />
+      </div>
       <div>
-        <Image src={"/persons/chara_archer.png"} width={450} height={400} alt="mage" className="absolute -z-50 right-0 bottom-0"/>
-        <Image src={"/persons/chara_mage.png"} width={450} height={400} alt="mage" className="absolute hidden lg:block -z-50 left-0"/>
+        <Image
+          src={"/persons/chara_archer.png"}
+          width={450}
+          height={400}
+          alt="mage"
+          className="absolute -z-50 right-0 bottom-0"
+        />
+        <Image
+          src={"/persons/chara_mage.png"}
+          width={450}
+          height={400}
+          alt="mage"
+          className="absolute hidden lg:block -z-50 left-0"
+        />
         <AnimationLetters>
           <section className="w-full mt-16 flex flex-col items-center justify-center max-w-[600px] text-center mx-auto">
             <h1
