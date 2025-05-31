@@ -16,22 +16,25 @@ const CommunityMenuBar = () => {
           Comunidades <MdKeyboardArrowDown size={20} />
         </MenubarTrigger>
         <MenubarContent className="bg-blue-800 border-none text-white">
-          <Link href={"/guides/"}>
+          <Link target="_blank" href={"https://discord.com/invite/4kAksB4"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Discord
             </MenubarItem>
           </Link>
-          <Link href={"/guides/"}>
+          <Link
+            target="_blank"
+            href={"https://www.youtube.com/channel/UCPOC50J6h-UAOn9qgvKjB-w"}
+          >
             <MenubarItem className="hover:cursor-custom-hand">
               Youtube
             </MenubarItem>
           </Link>
-          <Link href={"/guides/"}>
-            <MenubarItem className="hover:cursor-custom-hand">
-              Instagram
-            </MenubarItem>
-          </Link>
-          <Link href={"/guides/"}>
+          <Link
+            target="_blank"
+            href={
+              "https://www.facebook.com/people/RoseOn-Brasil/100089315821480/"
+            }
+          >
             <MenubarItem className="hover:cursor-custom-hand">
               Facebook
             </MenubarItem>

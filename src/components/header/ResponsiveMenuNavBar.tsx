@@ -144,6 +144,14 @@ const ResponsiveMenuNavBar = () => {
                         Sistema de combate
                       </SheetClose>
                     </Link>
+                    <Link
+                      href="/freatures/seasonal-events"
+                      className="w-full cursor-custom-hand font-semibold bg-slate-300 rounded hover:opacity-85"
+                    >
+                      <SheetClose className="w-full cursor-custom-hand p-2">
+                        Seasonal Events
+                      </SheetClose>
+                    </Link>
                   </section>
                 </AccordionContent>
               </AccordionItem>

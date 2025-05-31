@@ -102,7 +102,7 @@ export default function LoginDonate() {
               <p className="text-slate-400 text-sm">
                 Esqueceu sua senha?{" "}
                 <Link
-                  href={"/account/resetPassword"}
+                  href={"/auth/resetPassword"}
                   className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
                 >
                   Recuperar senha.
@@ -111,7 +111,7 @@ export default function LoginDonate() {
               <p className="text-sm text-slate-400">
                 Leia os termos!{" "}
                 <Link
-                  href="/account/terms"
+                  href="/donate/terms"
                   className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
                 >
                   Terms

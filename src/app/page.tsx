@@ -28,7 +28,9 @@ export default function Home() {
         </Link>
         <Link
           target="_blank"
-          href={"https://www.facebook.com/people/RoseOn-Brasil/100089315821480/"}
+          href={
+            "https://www.facebook.com/people/RoseOn-Brasil/100089315821480/"
+          }
           className="cursor-custom-hand hover:opacity-75 transition duration-200"
         >
           <FaFacebook size={23} color="white" />
@@ -146,13 +148,13 @@ export default function Home() {
 
           <div className="w-full h-[600px]">
             <Link
-              href={"/seasonal-events"}
+              href={"/freatures/seasonal-events"}
               className="w-full cursor-custom-hand"
             >
               <Image
-                src={"/others/seasonal-events.avif"}
-                width={2600}
-                height={600}
+                src={"/others/seasonal-events1.avif"}
+                width={1920}
+                height={700}
                 alt="banner seasonal eventos"
                 className="w-full rounded shadow"
               />

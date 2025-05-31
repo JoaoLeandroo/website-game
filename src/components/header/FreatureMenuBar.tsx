@@ -56,9 +56,14 @@ const FreatureMenuBar = () => {
               Off Vending
             </MenubarItem>
           </Link>
-                    <Link href={"/freatures/pvp"}>
+          <Link href={"/freatures/pvp"}>
             <MenubarItem className="hover:cursor-custom-hand">
               Sistema de combate
+            </MenubarItem>
+          </Link>
+          <Link href={"/freatures/seasonal-events"}>
+            <MenubarItem className="hover:cursor-custom-hand">
+              Seasonal Eventos
             </MenubarItem>
           </Link>
         </MenubarContent>
