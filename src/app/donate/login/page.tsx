@@ -111,7 +111,7 @@ export default function LoginDonate() {
               <p className="text-sm text-slate-400">
                 Leia os termos!{" "}
                 <Link
-                  href="/donate/terms"
+                  href="/auth/terms"
                   className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
                 >
                   Terms
