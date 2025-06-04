@@ -5,6 +5,24 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { TableDownload } from "@/components/others/TableDownload";
 import { BreadcrumbPages } from "@/components/others/BreadcrumbPages";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Download Rose Online Brasil | Baixe e Jogue Grátis",
+  description: "Baixe agora o cliente oficial do Rose Online Brasil. Jogue grátis o MMORPG clássico totalmente em português. Instalação fácil e rápida!",
+  keywords: [
+    "Download Rose Online Brasil",
+    "Baixar Rose Online",
+    "Rose Online Download",
+    "MMORPG grátis",
+    "jogo online download",
+    "RoseOnBR download",
+    "instalar Rose Online",
+    "cliente Rose Online",
+    "RPG online gratuito",
+    "jogo de fantasia download"
+  ]
+};
 
 const PageDownload = () => {
   return (

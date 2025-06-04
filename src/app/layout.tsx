@@ -17,8 +17,20 @@ const bungee = Bungee({
 });
 
 export const metadata: Metadata = {
-  title: "Rose Online Brasil - Página inicial",
-  description: "Bem vindo ao rose online brasil",
+  title: "Rose Online Brasil | MMORPG Gratuito",
+  description: "Jogue Rose Online Brasil, o clássico MMORPG gratuito em português. Crie seu personagem, participe de batalhas épicas e explore um mundo fantástico com outros jogadores.",
+  keywords: [
+    "Rose Online Brasil",
+    "Rose Online",
+    "MMORPG gratuito",
+    "MMORPG em português",
+    "jogo online grátis",
+    "Rose BR",
+    "RoseOnBR",
+    "RPG online",
+    "jogo multiplayer",
+    "jogos de fantasia"
+  ]
 };
 
 export default function RootLayout({
