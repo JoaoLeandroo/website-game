@@ -16,17 +16,17 @@ const invoices = [
     {
     invoice: "+4",
     paymentStatus: "Dia dos namorados",
-    totalAmount: "14/02",
+    totalAmount: "",
   },
   {
     invoice: "+2",
     paymentStatus: "Pascoa",
-    totalAmount: "05/04",
+    totalAmount: "",
   },
   {
     invoice: "+3",
     paymentStatus: "São joao",
-    totalAmount: "24/06",
+    totalAmount: "",
   },
 
   {
@@ -37,19 +37,19 @@ const invoices = [
   {
     invoice: "+6",
     paymentStatus: "Halloween",
-    totalAmount: "31/10",
+    totalAmount: "",
   },
   {
     invoice: "+7",
     paymentStatus: "Natal",
-    totalAmount: "24/11",
+    totalAmount: "",
   },
 ];
 
 export function TableEvents() {
   return (
     <div>
-      <Table className="text-desc bg-blue-100 rounded shadow border border-zinc-300">
+      <Table className="text-black bg-blue-100 rounded shadow border border-zinc-300">
         <TableHeader>
           <TableRow>
             <TableHead className="w-[250px]">Eventos</TableHead>

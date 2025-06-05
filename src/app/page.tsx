@@ -1,41 +1,25 @@
+import AnimationsScroll from "@/components/others/AnimationsScroll";
 import BannerHome from "@/components/others/BannerHome";
 import CardClassesStyle from "@/components/others/CardClassesStyle";
 import ContainerMain from "@/components/others/ContainerMain";
+import { Swords } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaDiscord, FaYoutube, FaFacebook } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-[1920px]">
       <BannerHome />
-      <div className="h-11 w-full bg-blue-500 flex gap-x-2 items-center justify-center">
-        <Link
-          target="_blank"
-          href={"https://discord.com/invite/4kAksB4"}
-          className="cursor-custom-hand hover:opacity-75 transition duration-200"
-        >
-          <FaDiscord size={30} color="white" />
-          <div className="sr-only">Botão Discord</div>
-        </Link>
-        <Link
-          target="_blank"
-          href={"https://www.youtube.com/channel/UCPOC50J6h-UAOn9qgvKjB-w"}
-          className="cursor-custom-hand hover:opacity-75 transition duration-200"
-        >
-          <FaYoutube size={30} color="white" />
-          <div className="sr-only">Botão youtube</div>
-        </Link>
-        <Link
-          target="_blank"
-          href={
-            "https://www.facebook.com/people/RoseOn-Brasil/100089315821480/"
-          }
-          className="cursor-custom-hand hover:opacity-75 transition duration-200"
-        >
-          <FaFacebook size={23} color="white" />
-          <div className="sr-only">Botão Facebook</div>
-        </Link>
+      <div className="h-11 carrousel w-full bg-blue-800 flex gap-x-2 items-center justify-end overflow-hidden">
+        <div className="group">
+          <div className="p flex items-center gap-x-2 card">
+            <Swords size={20} color="white" />
+            <p className="bg-yellow-100 px-1 rounded shadow-xl text-black">
+              Explore, lute, evolua, divirta-se — Rose Online Brasil te espera!
+            </p>
+            <Swords size={20} color="white" />
+          </div>
+        </div>
       </div>
       <ContainerMain>
         <div>
@@ -53,10 +37,10 @@ export default function Home() {
                 oferecendo aventuras inesquecíveis em um universo vasto e
                 envolvente.
               </p>
-              <span className="text-xl font-semibold text-tittle">
+              <span className="text-xl font-bold text-tittle mt-2">
                 Descubra 7 Planetas Únicos
               </span>
-              <p className="text-desc font-[400]">
+              <p className="text-desc font-[400] mb-2">
                 Seja um dos poucos a explorar todos os sete mundos
                 interplanetários disponíveis — uma exclusividade que você só
                 encontra aqui!
@@ -135,33 +119,36 @@ export default function Home() {
             </section>
           </article>
         </div>
+
+        <AnimationsScroll>
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-14">
+            <section className="flex flex-col text-center w-full">
+              <h4
+                className={`font-bungee font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
+              >
+                Eventos Seasonais
+              </h4>
+
+              <div className="w-full h-[400px] overflow-hidden">
+                <picture className="w-full h-[300px]">
+                  <Link
+                    href={"/freatures/seasonal-events"}
+                    className="w-full cursor-custom-hand"
+                  >
+                    <Image
+                      src={"/others/seasonal-events1.avif"}
+                      width={720}
+                      height={400}
+                      alt="banner seasonal eventos"
+                      className="w-full rounded shadow object-contain"
+                    />
+                  </Link>
+                </picture>
+              </div>
+            </section>
+          </article>
+        </AnimationsScroll>
       </ContainerMain>
-      {/* Eventos Seasonais */}
-
-      <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-14">
-        <section className="flex flex-col text-center w-full">
-          <h4
-            className={`font-bungee font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
-          >
-            Eventos Seasonais
-          </h4>
-
-          <div className="w-full h-[600px]">
-            <Link
-              href={"/freatures/seasonal-events"}
-              className="w-full cursor-custom-hand"
-            >
-              <Image
-                src={"/others/seasonal-events1.avif"}
-                width={1920}
-                height={700}
-                alt="banner seasonal eventos"
-                className="w-full rounded shadow"
-              />
-            </Link>
-          </div>
-        </section>
-      </article>
     </div>
   );
 }

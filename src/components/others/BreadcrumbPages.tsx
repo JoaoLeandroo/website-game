@@ -23,13 +23,13 @@ export function BreadcrumbPages({ namePage }: BreadcrumbProps) {
             Home
           </Link>
         </BreadcrumbItem>
-        <BreadcrumbSeparator />
+        <BreadcrumbSeparator className="text-desc"/>
         <BreadcrumbItem>
-          <p>...</p>
+          <p className="text-desc">...</p>
         </BreadcrumbItem>
-        <BreadcrumbSeparator />
+        <BreadcrumbSeparator className="text-desc"/>
         <BreadcrumbItem>
-          <BreadcrumbPage className="font-medium text-colorTitle">
+          <BreadcrumbPage className="font-medium text-tittle">
             {namePage}
           </BreadcrumbPage>
         </BreadcrumbItem>

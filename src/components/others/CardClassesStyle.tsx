@@ -29,7 +29,7 @@ const CardClassesStyle = ({
       />
       <Link
         href={urlButton}
-        className="absolute bottom-0 cursor-custom-hand transition duration-200 font-semibold hover:bg-blue-400 h-14 flex items-center justify-center w-full bg-blue-700 text-[#fff]"
+        className="absolute bottom-0 cursor-custom-hand transition duration-200 font-semibold hover:bg-yellow-100 h-14 flex items-center justify-center w-full bg-yellow-200 text-black"
       >
         {button}
       </Link>

@@ -64,6 +64,12 @@ const invoices = [
     totalAmount: "3x White heart",
     paymentMethod: "25-30x Enthiric",
   },
+    {
+    invoice: "+10",
+    paymentStatus: "15-20x",
+    totalAmount: "5x purple Hearts",
+    paymentMethod: "25-30x Homes",
+  },
 ];
 
 export function TableRefines() {
@@ -71,10 +77,10 @@ export function TableRefines() {
     <Table className="text-desc">
       <TableHeader>
         <TableRow>
-          <TableHead className="w-[100px]">Level</TableHead>
-          <TableHead>Quimicos</TableHead>
-          <TableHead>Materiais de refinamento</TableHead>
-          <TableHead className="text-left">Hearts</TableHead>
+          <TableHead className="w-[100px] text-desc">Level</TableHead>
+          <TableHead className="text-desc">Quimicos</TableHead>
+          <TableHead className="text-desc">Materiais de refinamento</TableHead>
+          <TableHead className="text-left text-desc">Hearts</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>

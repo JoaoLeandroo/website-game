@@ -10,21 +10,7 @@
 }
 
 .background-site {
-  background-image: linear-gradient(
-    to right top,
-    #ffffff,
-    #f1f7ff,
-    #d5f4ff,
-    #adf2ff,
-    #81f1ff,
-    #81f1ff,
-    #81f1ff,
-    #81f1ff,
-    #adf2ff,
-    #d5f4ff,
-    #f1f7ff,
-    #ffffff
-  );
+background-image: linear-gradient(to top, #00d4ff, #00b1f2, #008ee0, #006ac9, #0044aa, #043292, #04207b, #000e64, #000e54, #000d44, #020734, #020024);
 }
 
 /* inicio animação personagem home */
@@ -111,14 +97,45 @@
 
 /* Fim animação button download */
 
+/* Animação carrossel home */
+.carousel {
+    margin: 0 auto;
+    max-width: 800px;
+    overflow: hidden;
+    display: flex;
+    flex: 0 0 100%;
+  }
+
+  .group {
+    /* ... */
+    will-change: transform; /* Devemos ser gentis com o navegador - informar o que vamos animar. */
+    animation: scrolling 20s linear infinite;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(450px);
+    }
+    100% {
+      transform: translateX(-350%);
+    }
+  }
+  .card {
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* fim animação carrossel home */
+
 @theme inline {
   --color-primary: #2979ff;
   --color-secundary: #ffd700;
   --color-background: #ffffff;
-  --color-desc: #1a1a1a;
+  --color-desc: #ffffff;
   --color-textBase: #ffffff;
   --color-textEasy: #cccccc;
-  --color-tittle: #494949;
+  --color-tittle: #ffffff;
   --color-subTtittle: #606060;
   --color-colorText: #868383;
   --drop-shadow-primary: 2px 2px 2px black;

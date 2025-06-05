@@ -57,7 +57,7 @@ const PageDownload = () => {
               computador atende aos requisitos de sistema.
             </p>
 
-            <div className="w-full flex border hover:border-emerald-300 transition duration-200 bg-blue-100 px-6 py-3 flex-col justify-between h-[170px] rounded shadow mt-6">
+            <div className="w-full flex border hover:border-green-500 transition duration-200 bg-blue-100 px-6 py-3 flex-col justify-between h-[170px] rounded shadow mt-6">
               <picture className="flex items-center gap-x-2">
                 <Image
                   src={"/assets/RoseOnline_Logo.png"}
@@ -67,7 +67,7 @@ const PageDownload = () => {
                   className="select-none"
                 />
                 <div className="text-left">
-                  <p className="text-desc font-[500]">
+                  <p className="text-black font-[500]">
                     Launcher Rose Online Brasil
                   </p>
                   <span className="text-colorText font-[400] text-xs">
@@ -77,11 +77,11 @@ const PageDownload = () => {
               </picture>
 
               <div className="flex-col">
-                <div className="w-full flex justify-between text-desc font-[400] text-sm">
+                <div className="w-full flex justify-between text-black font-[400] text-sm">
                   <span>Tamanho:</span>
                   <span>2.4 GB</span>
                 </div>
-                <Button className="cursor-custom-hand w-full h-12">
+                <Button className="cursor-custom-hand w-full h-12 bg-green-500 hover:bg-green-600">
                   <Download size={20} /> download
                 </Button>
               </div>
