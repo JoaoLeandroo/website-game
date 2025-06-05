@@ -37,10 +37,10 @@ export default function Login() {
                 </div>
               </div>
               <div>
-                <CardTitle className="text-2xl select-none font-bungee gradient-text-yellow drop-shadow-primary text-tittle">
+                <CardTitle className="text-2xl select-none font-bungee gradient-text-yellow drop-shadow-primary">
                   Rose online Brasil
                 </CardTitle>
-                <CardDescription className="text-slate-400">
+                <CardDescription className="text-black">
                   Entre na sua conta e continue jogando
                 </CardDescription>
               </div>
@@ -48,20 +48,20 @@ export default function Login() {
 
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-slate-400">
+                <Label htmlFor="email" className="text-slate-700">
                   Digite seu email
                 </Label>
                 <Input
                   id="email"
                   type="text"
                   placeholder="Digite seu e-Mail"
-                  className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                  className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                   required
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="password" className="text-slate-400">
+                <Label htmlFor="password" className="text-slate-700">
                   Informe sua senha
                 </Label>
                 <div className="relative">
@@ -69,14 +69,14 @@ export default function Login() {
                     id="password"
                     type={showPassword ? "text" : "password"}
                     placeholder="Digite sua senha"
-                    className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                    className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                     required
                   />
                   <Button
                     type="button"
                     variant="ghost"
                     size="sm"
-                    className="absolute right-0 top-0 h-full px-3 text-slate-400 hover:text-white"
+                    className="absolute right-0 top-0 h-full px-3 text-slate-700 hover:text-white"
                     onClick={() => setShowPassword(!showPassword)}
                   >
                     {showPassword ? (
@@ -99,7 +99,7 @@ export default function Login() {
             </CardContent>
 
             <CardFooter className="flex flex-col">
-              <p className="text-slate-400 text-sm">
+              <p className="text-slate-700 text-sm">
                 Esqueceu sua senha?{" "}
                 <Link
                   href={"/auth/resetPassword"}
@@ -108,7 +108,7 @@ export default function Login() {
                   Recuperar senha.
                 </Link>
               </p>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-700">
                 Não tem uma conta?{" "}
                 <Link
                   href="/auth/createAccount"

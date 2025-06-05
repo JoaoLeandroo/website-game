@@ -40,7 +40,7 @@ export default function CreateAccount() {
               <CardTitle className="text-2xl select-none font-bungee gradient-text-yellow drop-shadow-primary text-tittle">
                 Rose online Brasil
               </CardTitle>
-              <CardDescription className="text-slate-400">
+              <CardDescription className="text-black">
                 Crie sua conta aqui!
               </CardDescription>
             </div>
@@ -48,53 +48,53 @@ export default function CreateAccount() {
 
           <CardContent className="space-y-4">
             <div className="space-y-1">
-              <Label htmlFor="email" className="text-slate-400">
+              <Label htmlFor="email" className="text-slate-700">
                 Informe um Email valido.
               </Label>
               <Input
                 id="email"
                 type="text"
                 placeholder="Digite seu e-Mail"
-                className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                 required
               />
             </div>
             <div className="flex justify-between gap-x-3 mt-10">
               <div className="flex flex-col gap-y-1">
-                <Label htmlFor="firistName" className="text-slate-400">
+                <Label htmlFor="firistName" className="text-slate-700">
                   Primeiro Nome
                 </Label>
                 <Input
                   id="firistName"
                   type="text"
                   placeholder="Seu primeiro nome"
-                  className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                  className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                   required
                 />
               </div>
 
               <div className="flex flex-col gap-y-1">
-                <Label htmlFor="middleName" className="text-slate-400">
+                <Label htmlFor="middleName" className="text-slate-700">
                   Nome do Meio
                 </Label>
                 <Input
                   id="middleName"
                   type="text"
                   placeholder="Nome do meio"
-                  className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                  className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                   required
                 />
               </div>
 
               <div className="flex flex-col gap-y-1">
-                <Label htmlFor="sobrenome" className="text-slate-400">
+                <Label htmlFor="sobrenome" className="text-slate-700">
                   Sobrenome
                 </Label>
                 <Input
                   id="sobrenome"
                   type="text"
                   placeholder="Seu sobrenome"
-                  className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                  className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                   required
                 />
               </div>
@@ -109,20 +109,20 @@ export default function CreateAccount() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="nameMother" className="text-slate-400">
+              <Label htmlFor="nameMother" className="text-slate-700">
                 Nome do Meio da sua Mãe
               </Label>
               <Input
                 id="nameMother"
                 type="text"
                 placeholder="Nome do meio da mãe"
-                className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                 required
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password" className="text-slate-400">
+              <Label htmlFor="password" className="text-slate-700">
                 Informe sua senha
               </Label>
               <div className="relative">
@@ -130,7 +130,7 @@ export default function CreateAccount() {
                   id="password"
                   type={showPassword ? "text" : "password"}
                   placeholder="Digite sua senha"
-                  className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                  className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                   required
                 />
                 <Button
@@ -149,7 +149,7 @@ export default function CreateAccount() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password" className="text-slate-400">
+              <Label htmlFor="password" className="text-slate-700">
                 Confirme a senha
               </Label>
               <div className="relative">
@@ -157,7 +157,7 @@ export default function CreateAccount() {
                   id="password"
                   type={showPassword ? "text" : "password"}
                   placeholder="Confirme sua senha"
-                  className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                  className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                   required
                 />
                 <Button
@@ -187,14 +187,14 @@ export default function CreateAccount() {
             </div>
 
             <div className="space-y-1">
-              <Label htmlFor="login" className="text-slate-400">
+              <Label htmlFor="login" className="text-slate-700">
                 Login de jogo
               </Label>
               <Input
                 id="login"
                 type="text"
                 placeholder="Informe um login válido"
-                className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                 required
               />
             </div>
@@ -223,7 +223,7 @@ export default function CreateAccount() {
           </CardContent>
 
           <CardFooter className="flex flex-col">
-            <p className="text-sm text-slate-400">
+            <p className="text-sm text-slate-700">
               Já possui conta?{" "}
               <Link
                 href="/auth/login"

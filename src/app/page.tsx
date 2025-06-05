@@ -2,7 +2,7 @@ import AnimationsScroll from "@/components/others/AnimationsScroll";
 import BannerHome from "@/components/others/BannerHome";
 import CardClassesStyle from "@/components/others/CardClassesStyle";
 import ContainerMain from "@/components/others/ContainerMain";
-import { Swords } from "lucide-react";
+import { Download, Swords } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -47,7 +47,7 @@ export default function Home() {
               </p>
               <Link
                 href={"guides/questPlanets"}
-                className="w-full xl:w-[180px] px-3 py-2 hover:cursor-custom-hand hover:opacity-75 text-center rounded-md border border-[#0ff] shadow-md font-semibold bg-[#2979ff] text-[#fff] uppercase"
+                className="w-full xl:w-[180px] px-3 py-2 hover:cursor-custom-hand hover:opacity-90 text-center rounded-md shadow-md font-semibold bg-yellow-100 text-black uppercase"
               >
                 Explore Mais!
               </Link>
@@ -57,7 +57,7 @@ export default function Home() {
                 src={"/others/arua.avif"}
                 width={600}
                 height={0}
-                alt="teste"
+                alt="Planeta arua"
                 className="rounded xl:rounded-bl-full w-full md:w-[400px] lg:w-[600px] object-cover"
               />
             </picture>
@@ -120,8 +120,9 @@ export default function Home() {
           </article>
         </div>
 
+        {/* section seasonal events */}
         <AnimationsScroll>
-          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-14">
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4">
             <section className="flex flex-col text-center w-full">
               <h4
                 className={`font-bungee font-bold text-3xl md:text-5xl mb-10 gradient-text-yellow drop-shadow-primary`}
@@ -129,7 +130,7 @@ export default function Home() {
                 Eventos Seasonais
               </h4>
 
-              <div className="w-full h-[400px] overflow-hidden">
+              <div className="w-full max-h-[400px] overflow-hidden">
                 <picture className="w-full h-[300px]">
                   <Link
                     href={"/freatures/seasonal-events"}
@@ -145,6 +146,45 @@ export default function Home() {
                   </Link>
                 </picture>
               </div>
+            </section>
+          </article>
+        </AnimationsScroll>
+
+        {/* Explore planets */}
+        <AnimationsScroll>
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-40 mt-16">
+            <picture className="select-none">
+              <Image
+                src={"/others/Hebarn.avif"}
+                width={600}
+                height={0}
+                alt="Planeta Hebarn"
+                className="w-full md:w-[400px] lg:w-[700px] object-cover rounded"
+              />
+            </picture>
+            <section className="flex flex-col text-center xl:text-left gap-y-1 w-full max-w-[600px]">
+              <h5
+                className={`font-bungee font-bold text-3xl gradient-text-yellow drop-shadow-primary`}
+              >
+                Explore O fascinante
+                <br /> Planeta Hebarn
+              </h5>
+              <p className="text-desc font-[400]">
+                Você vai se maravilhar com todas as belezas do planeta Hebarn —
+                um mundo espetacular e único em Rose Online Brasil. <br />
+                Prepare-se para enfrentar perigos emocionantes e explorar
+                cenários incríveis, cheios de mistério e aventura. Aqui, cada
+                local é exclusivo, cada batalha é épica, e cada jornada é
+                inesquecível.
+              </p>
+              <Link
+                href={"/guides/download"}
+                className="text-black flex justify-center gap-x-2 bg-yellow-100 text-center mt-3 p-3 rounded cursor-custom-hand font-[400]"
+              >
+                <Download size={20} />
+                <p className="hidden lg:block">Baixe o jogo agora e mergulhe neste universo fantástico!</p>
+                <p className="block lg:hidden">Download</p>
+              </Link>
             </section>
           </article>
         </AnimationsScroll>

@@ -29,7 +29,7 @@ export default function ResetPassword() {
               </div>
             </div>
             <div>
-              <CardTitle className="text-2xl select-none font-bungee gradient-text-yellow drop-shadow-primary text-tittle">
+              <CardTitle className="text-2xl select-none font-bungee gradient-text-yellow drop-shadow-primary">
                 Rose online Brasil
               </CardTitle>
               <CardDescription className="text-slate-700">
@@ -43,14 +43,14 @@ export default function ResetPassword() {
 
           <CardContent className="space-y-4">
             <div className="space-y-1">
-              <Label htmlFor="email" className="text-slate-400">
+              <Label htmlFor="email" className="text-slate-700">
                 <p className="text-xs">Digite seu E-mail de cadastro.</p>
               </Label>
               <Input
                 id="email"
                 type="text"
                 placeholder="Digite o email cadastrado"
-                className="border-slate-400 text-slate-700 placeholder:text-slate-400 h-11"
+                className="border-slate-400 text-slate-700 placeholder:text-slate-700 h-11"
                 required
               />
             </div>

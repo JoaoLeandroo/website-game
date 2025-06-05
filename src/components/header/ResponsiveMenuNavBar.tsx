@@ -212,7 +212,7 @@ const ResponsiveMenuNavBar = () => {
           <SheetFooter className=" w-full flex flex-row gap-x-2 justify-end mb-5">
             <Link href={"/auth/login"}>
               <SheetClose>
-                <p className="cursor-custom-hand px-3 py-2 rounded bg-yellow-300 text-desc hover:bg-yellow-200">
+                <p className="cursor-custom-hand px-3 py-2 rounded bg-yellow-100 text-black hover:bg-yellow-200">
                   Login
                 </p>
               </SheetClose>
@@ -220,7 +220,7 @@ const ResponsiveMenuNavBar = () => {
 
             <Link href={"/auth/createAccount"}>
               <SheetClose>
-                <p className="cursor-custom-hand px-3 py-2 rounded bg-yellow-300 text-desc hover:bg-yellow-200">
+                <p className="cursor-custom-hand px-3 py-2 rounded bg-yellow-100 text-black hover:bg-yellow-200">
                   Register
                 </p>
               </SheetClose>

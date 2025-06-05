@@ -40,7 +40,7 @@ export default function LoginDonate() {
                 <CardTitle className="text-2xl select-none font-bungee gradient-text-yellow drop-shadow-primary text-tittle">
                   Rose online Brasil
                 </CardTitle>
-                <CardDescription className="text-slate-400">
+                <CardDescription className="text-black">
                   Acesse o sistema de Doação
                 </CardDescription>
               </div>
@@ -48,20 +48,20 @@ export default function LoginDonate() {
 
             <CardContent className="space-y-4">
               <div>
-                <Label htmlFor="username" className="text-slate-400">
+                <Label htmlFor="username" className="text-slate-700">
                   Digite seu username
                 </Label>
                 <Input
                   id="username"
                   type="text"
                   placeholder="Digite o Login do jogo"
-                  className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                  className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                   required
                 />
               </div>
 
               <div>
-                <Label htmlFor="password" className="text-slate-400">
+                <Label htmlFor="password" className="text-slate-700">
                   Informe sua senha
                 </Label>
                 <div className="relative">
@@ -69,14 +69,14 @@ export default function LoginDonate() {
                     id="password"
                     type={showPassword ? "text" : "password"}
                     placeholder="Digite sua senha"
-                    className="border-slate-400 text-slate-700 placeholder:text-slate-400"
+                    className="border-slate-400 text-slate-700 placeholder:text-slate-700"
                     required
                   />
                   <Button
                     type="button"
                     variant="ghost"
                     size="sm"
-                    className="absolute right-0 top-0 h-full px-3 bg-transparent hover:bg-transparent border-l text-slate-400 hover:text-black cursor-custom-hand"
+                    className="absolute right-0 top-0 h-full px-3 bg-transparent hover:bg-transparent border-l text-slate-700 hover:text-black cursor-custom-hand"
                     onClick={() => setShowPassword(!showPassword)}
                   >
                     {showPassword ? (
@@ -99,7 +99,7 @@ export default function LoginDonate() {
             </CardContent>
 
             <CardFooter className="flex flex-col">
-              <p className="text-slate-400 text-sm">
+              <p className="text-slate-700 text-sm">
                 Esqueceu sua senha?{" "}
                 <Link
                   href={"/auth/resetPassword"}
@@ -108,7 +108,7 @@ export default function LoginDonate() {
                   Recuperar senha.
                 </Link>
               </p>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-700">
                 Leia os termos!{" "}
                 <Link
                   href="/auth/terms"
