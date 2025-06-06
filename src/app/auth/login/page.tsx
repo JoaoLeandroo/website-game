@@ -76,7 +76,7 @@ export default function Login() {
                     type="button"
                     variant="ghost"
                     size="sm"
-                    className="absolute right-0 top-0 h-full px-3 text-slate-700 hover:text-white"
+                    className="absolute border-l border-zinc-400 cursor-custom-hand right-0 top-0 h-full px-3 text-slate-700 hover:text-black hover:bg-transparent"
                     onClick={() => setShowPassword(!showPassword)}
                   >
                     {showPassword ? (
@@ -103,7 +103,7 @@ export default function Login() {
                 Esqueceu sua senha?{" "}
                 <Link
                   href={"/auth/resetPassword"}
-                  className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
+                  className="text-blue-700 hover:text-blue-600 cursor-custom-hand"
                 >
                   Recuperar senha.
                 </Link>
@@ -112,7 +112,7 @@ export default function Login() {
                 Não tem uma conta?{" "}
                 <Link
                   href="/auth/createAccount"
-                  className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
+                  className="text-blue-700 hover:text-blue-600 cursor-custom-hand"
                 >
                   Cadastre-se
                 </Link>

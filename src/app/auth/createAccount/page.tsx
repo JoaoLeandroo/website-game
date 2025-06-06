@@ -199,12 +199,12 @@ export default function CreateAccount() {
               />
             </div>
             <div className="flex items-center gap-x-2">
-              <Input type="checkbox" className="w-[15px] cursor-custom-hand" />
-              <p className="font-bold text-desc text-xs">
+              <Input type="checkbox" className="w-[15px] cursor-custom-hand" required/>
+              <p className="font-bold text-slate-700 text-xs">
                 Li os{" "}
                 <Link
                   href={"/Account/terms"}
-                  className="text-blue-600 hover:text-blue-500 cursor-custom-hand"
+                  className="text-blue-700 hover:text-blue-600 cursor-custom-hand"
                 >
                   Termos de uso
                 </Link>{" "}
@@ -227,7 +227,7 @@ export default function CreateAccount() {
               Já possui conta?{" "}
               <Link
                 href="/auth/login"
-                className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
+                className="text-blue-700 hover:text-blue-600 cursor-custom-hand"
               >
                 Faça login
               </Link>

@@ -12,10 +12,13 @@ export default function Home() {
       <BannerHome />
       <div className="h-11 carrousel w-full bg-blue-800 flex gap-x-2 items-center justify-end overflow-hidden">
         <div className="group">
-          <div className="p flex items-center gap-x-2 card">
+          <div className="flex items-center gap-x-2 card">
             <Swords size={20} color="white" />
-            <p className="bg-yellow-100 px-1 rounded shadow-xl text-black">
+            <p className="bg-yellow-100 px-1 text-center rounded shadow-xl text-black hidden lg:block">
               Explore, lute, evolua, divirta-se — Rose Online Brasil te espera!
+            </p>
+                        <p className="bg-yellow-100 px-1 text-center rounded shadow-xl text-black block lg:hidden">
+              Rose Online Brasil te espera!
             </p>
             <Swords size={20} color="white" />
           </div>
@@ -24,7 +27,7 @@ export default function Home() {
       <ContainerMain>
         <div>
           {/* SECTION PLANETAS */}
-          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-40 mt-10">
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-10 lg:mb-40 mt-10">
             <section className="flex flex-col text-center xl:text-left gap-y-1 w-full max-w-[600px]">
               <h2
                 className={`font-bungee font-bold text-3xl gradient-text-yellow drop-shadow-primary`}
@@ -152,14 +155,14 @@ export default function Home() {
 
         {/* Explore planets */}
         <AnimationsScroll>
-          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-40 mt-16">
-            <picture className="select-none">
+          <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-24 mt-16">
+            <picture className="select-none hidden md:block">
               <Image
                 src={"/others/Hebarn.avif"}
-                width={600}
+                width={720}
                 height={0}
                 alt="Planeta Hebarn"
-                className="w-full md:w-[400px] lg:w-[700px] object-cover rounded"
+                className="w-full md:w-[720px] object-cover rounded"
               />
             </picture>
             <section className="flex flex-col text-center xl:text-left gap-y-1 w-full max-w-[600px]">
