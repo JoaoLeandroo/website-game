@@ -28,7 +28,7 @@ export default function CreateAccount() {
           <BreadcrumbPages namePage="Registrar usuario" />
         </div>
       </div>
-      <div className="flex items-center justify-center p-4">
+      <div className="flex items-center justify-center p-1">
         <Card className="w-full rounded-[2px] max-w-2xl relative mt-8 mb-20 z-10">
           <CardHeader className="text-center">
             <div className="flex justify-center">
@@ -203,7 +203,7 @@ export default function CreateAccount() {
               <p className="font-bold text-slate-700 text-xs">
                 Li os{" "}
                 <Link
-                  href={"/Account/terms"}
+                  href={"/auth/terms"}
                   className="text-blue-700 hover:text-blue-600 cursor-custom-hand"
                 >
                   Termos de uso

@@ -28,7 +28,7 @@ export default function Login() {
         <div className="mt-5">
           <BreadcrumbPages namePage="Login de jogo" />
         </div>
-        <div className="flex items-center justify-center p-4">
+        <div className="flex items-center justify-center p-1">
           <Card className="w-full rounded-[2px] max-w-md relative mt-8 mb-20 z-10">
             <CardHeader className="text-center">
               <div className="flex justify-center">

@@ -20,7 +20,7 @@ export default function ResetPassword() {
           <BreadcrumbPages namePage="Recuperar senha" />
         </div>
       </div>
-      <div className="flex items-center justify-center p-4">
+      <div className="flex items-center justify-center p-1">
         <Card className="w-full rounded-[2px] max-w-2xl relative mt-8 mb-20 z-10">
           <CardHeader className="text-center">
             <div className="flex justify-center">

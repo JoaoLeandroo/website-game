@@ -1,3 +1,4 @@
+import { BreadcrumbPages } from "@/components/others/BreadcrumbPages";
 import SectionContent from "@/components/others/SectionContent";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -5,6 +6,9 @@ import Link from "next/link";
 const Terms = () => {
   return (
     <SectionContent>
+      <div className="mt-5">
+        <BreadcrumbPages namePage="Termos de uso" />
+      </div>
       <section className="flex flex-col px-4 lg:px-10">
         <h1 className="font-bungee gradient-text-yellow drop-shadow-primary text-2xl mt-12">
           Termos de Serviço e Uso
@@ -44,16 +48,16 @@ const Terms = () => {
           o responsável legal por essa ação.
         </p>
 
-        <i className="text-xs mt-2">
+        <i className="text-xs mt-2 text-desc">
           Todas as marcas que por ventura estiverem sendo utilizadas neste jogo,
           são de seus respectivos donos.
         </i>
 
-        <Button className="cursor-custom-hand max-w-xs bg-green-600 hover:bg-green-700 transition duration-300 mb-20 mt-8 h-14 rounded shadow">
-          <Link href={"/Account/createAccount"} className="cursor-custom-hand">
+        <Link href={"/auth/createAccount"} className="cursor-custom-hand">
+          <Button className="cursor-custom-hand max-w-xs bg-green-600 hover:bg-green-700 transition duration-300 mb-20 mt-8 h-14 rounded shadow">
             Li e concordo
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </section>
     </SectionContent>
   );

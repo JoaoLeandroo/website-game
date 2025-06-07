@@ -92,7 +92,7 @@ export function TableAccount() {
             <CardContent className="space-y-4">
               <CardHeader className="space-y-1 p-0 flex justify-between items-center">
                 <div>
-                  <p className="font-bold text-tittle text-xl">
+                  <p className="font-bold text-slate-700 text-xl">
                     Editar dados da conta
                   </p>
                   <p className="text-blue-700 text-xs select-none">

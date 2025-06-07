@@ -28,7 +28,7 @@ export default function LoginDonate() {
           <BreadcrumbPages namePage="Login de doação" />
         </div>
 
-        <div className="flex items-center justify-center p-4">
+        <div className="flex items-center justify-center p-1">
           <Card className="w-full rounded-[2px] max-w-md relative mt-8 mb-20 z-10">
             <CardHeader className="text-center">
               <div className="flex justify-center">
@@ -103,7 +103,7 @@ export default function LoginDonate() {
                 Esqueceu sua senha?{" "}
                 <Link
                   href={"/auth/resetPassword"}
-                  className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
+                  className="text-blue-700 hover:text-blue-600 cursor-custom-hand"
                 >
                   Recuperar senha.
                 </Link>
@@ -112,7 +112,7 @@ export default function LoginDonate() {
                 Leia os termos!{" "}
                 <Link
                   href="/auth/terms"
-                  className="text-blue-400 hover:text-blue-300 cursor-custom-hand font-semibold"
+                  className="text-blue-700 hover:text-blue-600 cursor-custom-hand"
                 >
                   Terms
                 </Link>
