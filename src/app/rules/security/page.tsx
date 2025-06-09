@@ -11,7 +11,7 @@ const Security = () => {
           </h1>
         </div>
 
-        <ol className="list-decimal flex flex-col gap-y-3 mt-10 mb-20">
+        <ol className="list-decimal text-desc flex flex-col gap-y-3 mt-10 mb-20">
           <li>
             <p className="text-desc">
               Não dê seu login e senha para ninguém. Isto serve também para
@@ -40,7 +40,7 @@ const Security = () => {
               <br />
               Aqui estão dicas de como criar uma boa senha:{" "}
               <Link
-                className="text-blue-400 cursor-custom-hand hover:opacity-75"
+                className="text-yellow-400 cursor-custom-hand hover:opacity-75"
                 target="_blank"
                 href={
                   "https://www.tecmundo.com.br/seguranca/4664-o-guia-definitivo-para-criar-senhas-seguras.htm"
@@ -50,7 +50,7 @@ const Security = () => {
               </Link>
               <br />E aqui você pode verificar se você tem uma boa senha:{" "}
               <Link
-                className="text-blue-400 cursor-custom-hand hover:opacity-75"
+                className="text-yellow-400 cursor-custom-hand hover:opacity-75"
                 target="_blank"
                 href={"https://testedesenha.com.br/"}
               >
@@ -164,7 +164,7 @@ const Security = () => {
 
           <li>
             <p className="text-desc">
-              <b className="text-red-500">
+              <b className="text-red-300">
                 NUNCA PASSE SEU USUÁRIO OU SENHA para nehum GM ou até mesmo para
                 o ADM.
               </b>{" "}

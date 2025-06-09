@@ -40,6 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/assets/RoseOnline_Logo.png" sizes="any" />
+      </head>
       <body
         className={`${poppins.className} ${bungee.variable} antialiased background-site selection:bg-yellow-200 selection:text-black cursor-custom-sword `}
       >

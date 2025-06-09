@@ -79,7 +79,7 @@ const PageDownload = () => {
               <div className="flex-col">
                 <div className="w-full flex justify-between text-black font-[400] text-sm">
                   <span>Tamanho:</span>
-                  <span>2.4 GB</span>
+                  <span>1.2 GB</span>
                 </div>
                 <Button className="cursor-custom-hand w-full h-12 bg-green-500 hover:bg-green-600">
                   <Download size={20} /> download

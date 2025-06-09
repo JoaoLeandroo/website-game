@@ -10,7 +10,7 @@ const Pratices = () => {
             <h1 className="text-tittle text-2xl mt-12 font-bungee gradient-text-yellow drop-shadow-primary">
               Boas Práticas / Regras de Comportamento
             </h1>
-            <ol className="list-decimal mt-10 flex flex-col gap-y-4">
+            <ol className="list-decimal mt-10 text-desc flex flex-col gap-y-4">
               <li>
                 <p className="text-tittle font-[700]">Não faça KS</p>
                 <p className="text-desc">
