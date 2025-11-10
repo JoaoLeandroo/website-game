@@ -15,7 +15,7 @@ const PageBox = () => {
             Sistema de Box
           </h1>
           <span className="font-bold text-tittle">
-            Visualização do conteúdo da caixa
+            Visualização do conteúdo da caixa:
           </span>
           <p className="text-desc">
             Para ver o que há dentro de uma caixa, pressione a tecla{" "}
@@ -28,7 +28,7 @@ const PageBox = () => {
               src={"/freatures/gacha2.avif"}
               width={1280}
               height={300}
-              alt="gacha"
+              alt="gacha in shop"
               className="rounded shadow mt-1"
             />
           </picture>
@@ -36,7 +36,7 @@ const PageBox = () => {
 
         <picture className="flex flex-col mt-5 mb-20">
           <span className="font-bold text-tittle">
-            Exibição de conteúdo
+            Exibição de conteúdo:
           </span>
           <p className=" text-desc">
             Em seguida, uma nova aba será aberta, mostrando todos os itens
@@ -47,7 +47,7 @@ const PageBox = () => {
             src={"/freatures/gacha-1.avif"}
             width={1280}
             height={300}
-            alt="gacha"
+            alt="itens gacha"
             className="rounded shadow"
           />
         </picture>
