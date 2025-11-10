@@ -140,7 +140,7 @@ export default function Home() {
                     className="w-full cursor-custom-hand"
                   >
                     <Image
-                      src={"/others/seasonal-events1.avif"}
+                      src={"/others/seasonal-event.jpg"}
                       width={720}
                       height={400}
                       alt="banner seasonal eventos"
@@ -158,7 +158,7 @@ export default function Home() {
           <article className="w-full flex flex-wrap justify-center xl:justify-between items-center gap-y-4 mb-24 mt-16">
             <picture className="select-none hidden md:block">
               <Image
-                src={"/others/Hebarn.avif"}
+                src={"/others/hebarn-planet.jpg"}
                 width={720}
                 height={0}
                 alt="Planeta Hebarn"
